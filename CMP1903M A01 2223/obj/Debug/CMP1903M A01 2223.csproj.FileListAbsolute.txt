@@ -1,3 +1,11 @@
 C:\Users\Computing\Downloads\CMP1903M Object Oriented Programming A01 2223\CMP1903M A01 2223\CMP1903M A01 2223\obj\Debug\CMP1903M A01 2223.csproj.AssemblyReference.cache
 C:\Users\Computing\Downloads\CMP1903M Object Oriented Programming A01 2223\CMP1903M A01 2223\CMP1903M A01 2223\obj\Debug\CMP1903M A01 2223.csproj.SuggestedBindingRedirects.cache
 C:\Users\Computing\Downloads\CMP1903M Object Oriented Programming A01 2223\CMP1903M A01 2223\CMP1903M A01 2223\obj\Debug\CMP1903M A01 2223.csproj.CoreCompileInputs.cache
+C:\Users\gregj\CMP1903M-A01-2223\CMP1903M A01 2223\obj\Debug\CMP1903M A01 2223.csproj.AssemblyReference.cache
+C:\Users\gregj\CMP1903M-A01-2223\CMP1903M A01 2223\obj\Debug\CMP1903M A01 2223.csproj.SuggestedBindingRedirects.cache
+C:\Users\gregj\CMP1903M-A01-2223\CMP1903M A01 2223\obj\Debug\CMP1903M A01 2223.csproj.CoreCompileInputs.cache
+C:\Users\gregj\CMP1903M-A01-2223\CMP1903M A01 2223\bin\Debug\CMP1903M A01 2223.exe.config
+C:\Users\gregj\CMP1903M-A01-2223\CMP1903M A01 2223\bin\Debug\CMP1903M A01 2223.exe
+C:\Users\gregj\CMP1903M-A01-2223\CMP1903M A01 2223\bin\Debug\CMP1903M A01 2223.pdb
+C:\Users\gregj\CMP1903M-A01-2223\CMP1903M A01 2223\obj\Debug\CMP1903M A01 2223.exe
+C:\Users\gregj\CMP1903M-A01-2223\CMP1903M A01 2223\obj\Debug\CMP1903M A01 2223.pdb
