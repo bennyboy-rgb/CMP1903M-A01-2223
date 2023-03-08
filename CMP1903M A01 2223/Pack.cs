@@ -18,8 +18,8 @@ namespace CMP1903M_A01_2223
                 for ( int j = 1 ; j < 5 ; j++)// 4 suits
                 {
                     Card card = new Card(i,j); //ceates the cards in that sequence
-                    pack.Add(card);// adds the card to list 
-                   // Console.WriteLine(card);
+                    pack.Add(card);
+                  
                 }
             }
         }
@@ -38,6 +38,7 @@ namespace CMP1903M_A01_2223
             }
             else if (typeOfShuffle == 3)
             {
+                Console.WriteLine("No shuffle");
                 return true;
             }
            
@@ -70,6 +71,7 @@ namespace CMP1903M_A01_2223
             {
                 int j = random.Next(0,i);
                 (pack[i], pack[j]) = (pack[j], pack[i]);
+                
 
             }
             Console.WriteLine("Fisher_yates shuffle method !!");
@@ -85,8 +87,10 @@ namespace CMP1903M_A01_2223
                 shuffledcards.Add(half1[i]);
                 shuffledcards.Add(half2[i]);
 
+
              }
             pack = shuffledcards;
+           
             Console.WriteLine("The Riffle Shuffle Method !!");
             return true;
         }
@@ -94,6 +98,7 @@ namespace CMP1903M_A01_2223
         {
             foreach (Card card in pack)
             {
+                card.ToString();
                 Console.WriteLine(card);
             }
         }

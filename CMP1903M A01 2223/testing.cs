@@ -6,16 +6,20 @@ using System.Threading.Tasks;
 
 namespace CMP1903M_A01_2223
 {
-    class Program
+    internal class testing
     {
-        static void Main(string[] args)
+        public testing() 
         {
             Pack pack = new Pack();
-            testing card_tester = new testing();
 
-
-            //Pack.shuffleCardPack(2);
-
+            
+            Console.WriteLine(Pack.shuffleCardPack(1));
+            Console.WriteLine( Pack.riffle_shuffle_metthod());
+           
+            Console.WriteLine(Pack.shuffleCardPack(2));
+            Console.WriteLine(Pack.shuffleCardPack(3));
+         
+            Console.WriteLine(Pack.deal());
             //Console.WriteLine(Pack.deal());
             //Console.WriteLine(" how many cards do you want : ");
             //int benny = int.Parse(Console.ReadLine());
@@ -23,7 +27,7 @@ namespace CMP1903M_A01_2223
             //Console.WriteLine();
             //Pack.parkprinter();
 
-            
+
             Console.ReadLine();
         }
     }
