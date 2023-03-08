@@ -14,7 +14,7 @@ namespace CMP1903M_A01_2223
 
             
             Console.WriteLine(Pack.shuffleCardPack(1));
-            Console.WriteLine( Pack.riffle_shuffle_metthod());
+           // Pack.parkprinter();
            
             Console.WriteLine(Pack.shuffleCardPack(2));
             Console.WriteLine(Pack.shuffleCardPack(3));
