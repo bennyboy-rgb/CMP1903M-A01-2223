@@ -14,14 +14,6 @@ namespace CMP1903M_A01_2223
             testing card_tester = new testing();
 
 
-            //Pack.shuffleCardPack(2);
-
-            //Console.WriteLine(Pack.deal());
-            //Console.WriteLine(" how many cards do you want : ");
-            //int benny = int.Parse(Console.ReadLine());
-            //Console.WriteLine(Pack.dealCard(benny)[0]);
-            //Console.WriteLine();
-            //Pack.parkprinter();
 
             
             Console.ReadLine();
