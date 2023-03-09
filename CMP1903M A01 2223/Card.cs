@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.AccessControl;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -32,33 +33,9 @@ namespace CMP1903M_A01_2223
 
         public override string ToString()
         {
-            var Values = new Dictionary<int, string>()
-            {
-                {1, "Ace" },
-                {2, "Two" },
-                {3, "Three" },
-                {4, "Four" },
-                {5, "Five" },
-                {6, "Six" },
-                {7, "Seven" },
-                {8, "Eight" },
-                {9, "Nine" },
-                {10, "Ten" },
-                {11, "Jack" },
-                {12, "Queen" },
-                {13, "King" }
-            };
 
-            var Suits = new Dictionary<int, string>()
-            {
-                {1, "Diamonds" },
-                {2, "Spades" },
-                {3, "Clubs" },
-                {4, "Hearts" }
-            };
-
-
-            return Values +" : " + Suits;
+        
+            return Value +" : " + Suit;
         }
     }
     
