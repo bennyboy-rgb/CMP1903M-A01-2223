@@ -87,7 +87,7 @@ namespace CMP1903M_A01_2223
             for ( int i = pack.Count; i <= 0; i--)
             {
                 int j = random.Next(0,i);
-                (pack[i], pack[j]) = (pack[j], pack[i]);// picks card 
+                (pack[i], pack[j]) = (pack[j], pack[i]);// picks card randomly and places it ontop 
                 
 
             }
@@ -98,20 +98,20 @@ namespace CMP1903M_A01_2223
         {
            
             List<Card> shuffledcards = new List<Card>();
-            List<Card> half1 = pack.GetRange(0,pack.Count/2);
-            List<Card> half2 = pack.GetRange(pack.Count / 2, pack.Count / 2);
-            for (int i = 0; i < half1.Count; i++) {
-                shuffledcards.Add(half1[i]);
-                shuffledcards.Add(half2[i]);
+            List<Card> half1 = pack.GetRange(0,pack.Count/2);// takes one half or the first halfof the deck
+            List<Card> half2 = pack.GetRange(pack.Count / 2, pack.Count / 2); // takes the other half
+            for (int i = 0; i < half1.Count; i++) {  
+                shuffledcards.Add(half1[i]);// takes a card from the first half and places it on the second half 
+                shuffledcards.Add(half2[i]);// takes a card from the secpmd hald and places it on the first half 
 
 
-             }
+             }// places the cards on eaccother
             pack = shuffledcards;
            
             Console.WriteLine("The Riffle Shuffle Method !!");
             return true;
         }
-        public static void parkprinter()
+        public static void parkprinter()// prints the deck 
         {
             foreach (Card card in pack)
             {

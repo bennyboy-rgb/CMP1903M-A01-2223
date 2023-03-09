@@ -31,7 +31,7 @@ namespace CMP1903M_A01_2223
 
 
 
-        public override string ToString()
+        public override string ToString() // so it can return the cards itself 
         {
 
         
