@@ -6,17 +6,14 @@ using System.Threading.Tasks;
 
 namespace CMP1903M_A01_2223
 {
-    class Program
+    class Testing
     {
         static void Main(string[] args)
         {
             Pack pack = new Pack();
-            testing card_tester = new testing();
-
-
-
-            
-            Console.ReadLine();
+            Questions.first_question();
+            Questions.second_question();
+          
         }
     }
 }

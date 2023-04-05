@@ -1,62 +1,71 @@
-﻿using System;
-using System.Collections.Generic;
+﻿//using System;
+//using System.Collections.Generic;
+using System;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace CMP1903M_A01_2223
 {
-    internal class testing
+    public class Questions
     {
-        public testing() 
+        public static void second_question()
         {
-            Pack pack = new Pack();
-            Console.WriteLine( " How many cards do you want to deal : ");
-          
-            try
+            int user_input = 0;
+            bool valid = false;
+            while (!valid)
             {
-                int card_dealing = int.Parse(Console.ReadLine());
-                if (card_dealing > 52)
+                Console.WriteLine("How many cards do you wan to deal : ");
+                if (int.TryParse(Console.ReadLine(), out user_input))
                 {
-                    Console.WriteLine(" You can't deal more then 52 cards !!");
+                    if (user_input <= 52)
+                    {
+                        valid = true;
+                        foreach (Card card in Pack.dealCard(user_input))
+                        {
+                            Console.WriteLine(card);
+                        }
+                    }
+                    else if (user_input <= 0 || user_input > 52)
+                    {
+                        Console.WriteLine("Invalid input please");
+                    }
+                }
+            }
+        }
+
+
+
+
+        public static void first_question()
+        {
+            bool valid = false;
+            int user_input = 0;
+
+            while (!valid)
+            {
+                Console.WriteLine(" what shuffle method do you want do you want :\n ENTER \n (1) for fisheryate shuffling \n (2) for riffle shuffle \n (3) for no shuffle  ");
+                if (int.TryParse(Console.ReadLine(), out user_input))
+                {
+                    if (user_input == 1 || user_input == 2 || user_input == 3)
+                    {
+                        valid = true;
+                        Pack.shuffleCardPack(user_input);
+                        Pack.parkprinter();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Please enter a valid digit!");
+                    }
                 }
                 else
                 {
-                    Console.WriteLine(Pack.dealCard(card_dealing));
-                }
-            }
-            catch (System.FormatException) {
-                Console.WriteLine( " You can only input integers !!");
-              
-
-
-            }
-
-            Console.WriteLine(" what shuffle do you want : ");
-            int user_input = int.Parse(Console.ReadLine());
-           // Console.WriteLine(Pack.shuffleCardPack(user_input));
-            try
-            {
-                if (user_input >=4|| user_input == null)
-                {
-                    Console.WriteLine( "wrong input !!");
-                }
-                else
-                {
-                    Console.WriteLine(Pack.shuffleCardPack(user_input));
+                    Console.WriteLine("please enter an integer!!");
                 }
 
             }
-            catch (System.FormatException) 
-            {
-                Console.WriteLine(" You need to input an integer !!!");
-            }
-           
-            Pack.parkprinter();
-
-
-
-            Console.ReadLine();
         }
     }
 }
+
+

@@ -35,7 +35,7 @@ namespace CMP1903M_A01_2223
         {
 
         
-            return Value +" : " + Suit;
+            return "Value: " + Value +" , Suit: " + Suit;
         }
     }
     

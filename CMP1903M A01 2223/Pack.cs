@@ -67,15 +67,7 @@ namespace CMP1903M_A01_2223
             List<Card> cardsToReturn = pack.Take(amount).ToList();
             foreach (Card card in cardsToReturn)
             {
-                if (card == null)
-                {
-                    Console.WriteLine( "there are no more cards to pull here !!");
-                }
-                else
-                {
                     pack.Remove(card);
-
-                }
             }
 
             return cardsToReturn;
