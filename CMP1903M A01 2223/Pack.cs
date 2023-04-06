@@ -47,17 +47,9 @@ namespace CMP1903M_A01_2223
         }
         public static Card deal()
         {
-            //Deals one card
-            Card card = pack.First();// picks the card from the top of the deck
-            if (card == null)
-            {
-                Console.WriteLine("there are no more cards !!");
-            }
-            else
-            {
-                
-                pack.Remove(card);
-            }
+           
+            Card card = pack.First();
+            pack.Remove(card);
             return card;
 
         }

@@ -21,6 +21,7 @@ namespace CMP1903M_A01_2223
         //Suit: numbers 1 - 4
         //The 'set' methods for these properties could have some validation
         public int Value { get { return _value; }
+           
           
         }
  
