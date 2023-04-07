@@ -15,6 +15,7 @@ namespace CMP1903M_A01_2223
             //Questions.second_question();
             //Questions.ThirdQUestion();
             Questions.shufflegameMethod();
+            Questions.playAgain();
             Console.ReadLine();
           
         }

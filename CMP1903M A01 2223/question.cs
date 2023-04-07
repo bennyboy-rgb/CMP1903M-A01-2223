@@ -112,7 +112,7 @@ namespace CMP1903M_A01_2223
                     {
                         valid = true;
 
-                        playgame();
+                        Console.WriteLine(playgame());
                     }
                     else
                     {
@@ -127,31 +127,64 @@ namespace CMP1903M_A01_2223
 
         public static double playgame()
         {
-            //List<Card> newdeck = Pack.dealCard(3);
-            foreach (Card card in Pack.dealCard(3))
+            List<Card> newdeck = Pack.dealCard(3);
+            //foreach (Card card in Pack.dealCard(3))
+            //{
+            //    Console.WriteLine(card.Value);
+            //}
+            if (newdeck[1].Suit == 1)
             {
-                Console.WriteLine(card.Value);
+                Console.WriteLine(newdeck[0].Value+ "+" + newdeck[2].Value);
+                return newdeck[0].Value + newdeck[2].Value;
             }
-            //if (newdeck[1].Suit == 1)
-            //{
-            //    return newdeck[0].Value + newdeck[2].Value; 
-            //}
-            //else if (newdeck[1].Suit == 2)
-            //{
-            //    return newdeck[0].Value - newdeck[2].Value;
-            //}
-            //else if (newdeck[1].Suit == 3)
-            //{
-            //    return newdeck[0].Value / newdeck[2].Value;
-            //}
-            //else if (newdeck[1].Suit == 4)
-            //{
-            //    return newdeck[0].Value * newdeck[2].Value;
-            //}
+            else if (newdeck[1].Suit == 2)
+            {
+                return newdeck[0].Value - newdeck[2].Value;
+            }
+            else if (newdeck[1].Suit == 3)
+            {
+                return newdeck[0].Value / newdeck[2].Value;
+            }
+            else if (newdeck[1].Suit == 4)
+            {
+                return newdeck[0].Value * newdeck[2].Value;
+            }
+            return 0;
             //foreach (Card card in newdeck)
             //{
             //    Console.WriteLine(card.Value);
             //}
+        }
+
+        public static void playAgain()
+        {
+            bool valid = false;
+            int user_input = 0;
+             while (!valid)
+            {
+                Console.WriteLine("Wounld you love to try again : \n ENTER : \n (1) for Yes \n(2) to quit game ");
+                if (int.TryParse(Console.ReadLine(), out user_input)) 
+                {
+                    if ( user_input == 1)
+                    {
+                        valid = true;
+                        ThirdQUestion();
+                    }
+                    else if(user_input == 2)
+                    {
+                        valid = true;
+                        Console.WriteLine("Thank you for your time!!");
+                    }
+                    else
+                    {
+                        Console.WriteLine("input a valid input please");
+                    }
+                }
+                else
+                {
+                    Console.WriteLine( "input an integer please!!");
+                }
+            }
         }
     }
     

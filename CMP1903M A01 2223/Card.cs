@@ -38,6 +38,10 @@ namespace CMP1903M_A01_2223
         
             return "Value: " + Value +" , Suit: " + Suit;
         }
+        public override string Twostring()
+        {
+            return Value;
+        }
     }
     
 }
