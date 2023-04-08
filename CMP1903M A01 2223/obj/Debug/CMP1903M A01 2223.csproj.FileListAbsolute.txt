@@ -41,3 +41,11 @@ C:\Users\temid\Source\Repos\CMP1903M-A01-2223\CMP1903M A01 2223\obj\Debug\CMP190
 C:\Users\temid\Source\Repos\CMP1903M-A01-2223\CMP1903M A01 2223\obj\Debug\CMP1903M A01 2223.csproj.CoreCompileInputs.cache
 C:\Users\temid\Source\Repos\CMP1903M-A01-2223\CMP1903M A01 2223\obj\Debug\CMP1903M A01 2223.exe
 C:\Users\temid\Source\Repos\CMP1903M-A01-2223\CMP1903M A01 2223\obj\Debug\CMP1903M A01 2223.pdb
+C:\Users\temid\Source\Repos\bennyboy-rgb\CMP1903M-A01-2223\CMP1903M A01 2223\bin\Debug\CMP1903M A01 2223.exe.config
+C:\Users\temid\Source\Repos\bennyboy-rgb\CMP1903M-A01-2223\CMP1903M A01 2223\bin\Debug\CMP1903M A01 2223.exe
+C:\Users\temid\Source\Repos\bennyboy-rgb\CMP1903M-A01-2223\CMP1903M A01 2223\bin\Debug\CMP1903M A01 2223.pdb
+C:\Users\temid\Source\Repos\bennyboy-rgb\CMP1903M-A01-2223\CMP1903M A01 2223\obj\Debug\CMP1903M A01 2223.csproj.AssemblyReference.cache
+C:\Users\temid\Source\Repos\bennyboy-rgb\CMP1903M-A01-2223\CMP1903M A01 2223\obj\Debug\CMP1903M A01 2223.csproj.SuggestedBindingRedirects.cache
+C:\Users\temid\Source\Repos\bennyboy-rgb\CMP1903M-A01-2223\CMP1903M A01 2223\obj\Debug\CMP1903M A01 2223.csproj.CoreCompileInputs.cache
+C:\Users\temid\Source\Repos\bennyboy-rgb\CMP1903M-A01-2223\CMP1903M A01 2223\obj\Debug\CMP1903M A01 2223.exe
+C:\Users\temid\Source\Repos\bennyboy-rgb\CMP1903M-A01-2223\CMP1903M A01 2223\obj\Debug\CMP1903M A01 2223.pdb

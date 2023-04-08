@@ -112,7 +112,15 @@ namespace CMP1903M_A01_2223
                     {
                         valid = true;
 
-                        Console.WriteLine(playgame());
+                        //Console.WriteLine(playgame());
+                        if (playgame() == 1)
+                        {
+                            Console.WriteLine("correct answer !!");
+                        }
+                        else
+                        {
+                            Console.WriteLine($"wrong answer, the answer is ({playgame()})");
+                        }
                     }
                     else
                     {
@@ -128,25 +136,78 @@ namespace CMP1903M_A01_2223
         public static double playgame()
         {
             List<Card> newdeck = Pack.dealCard(3);
-            //foreach (Card card in Pack.dealCard(3))
-            //{
-            //    Console.WriteLine(card.Value);
-            //}
+            foreach (Card card in Pack.dealCard(3))
+
+
+            {
+                Console.WriteLine(card.Value);
+            }
             if (newdeck[1].Suit == 1)
             {
+                int user_answer = 0;
+                int question = newdeck[0].Value + newdeck[2].Value;
                 Console.WriteLine(newdeck[0].Value+ "+" + newdeck[2].Value);
+                if (int.TryParse(Console.ReadLine(),out user_answer))
+                {
+                    if (user_answer == question)
+                    {
+                        return 1;
+                    }
+                    else
+                        
+                        return question;
+                }
                 return newdeck[0].Value + newdeck[2].Value;
             }
             else if (newdeck[1].Suit == 2)
             {
+                int user_answer = 0;
+                int question = newdeck[0].Value - newdeck[2].Value;
+                Console.WriteLine(newdeck[0].Value + "-" + newdeck[2].Value);
+                if (int.TryParse(Console.ReadLine(), out user_answer))
+                {
+                    if (user_answer == question)
+                    {
+                        return 1;
+                    }
+                    else
+
+                        return question;
+                }
                 return newdeck[0].Value - newdeck[2].Value;
             }
             else if (newdeck[1].Suit == 3)
             {
+                int user_answer = 0;
+                int question = newdeck[0].Value / newdeck[2].Value;
+                Console.WriteLine(newdeck[0].Value + "/" + newdeck[2].Value);
+                if (int.TryParse(Console.ReadLine(), out user_answer))
+                {
+                    if (user_answer == question)
+                    {
+                        return 1;
+                    }
+                    else
+
+                        return question;
+                }
                 return newdeck[0].Value / newdeck[2].Value;
             }
             else if (newdeck[1].Suit == 4)
             {
+                int user_answer = 0;
+                int question = newdeck[0].Value * newdeck[2].Value;
+                Console.WriteLine(newdeck[0].Value + "x" + newdeck[2].Value);
+                if (int.TryParse(Console.ReadLine(), out user_answer))
+                {
+                    if (user_answer == question)
+                    {
+                        return 1;
+                    }
+                    else
+
+                        return question;
+                }
                 return newdeck[0].Value * newdeck[2].Value;
             }
             return 0;
