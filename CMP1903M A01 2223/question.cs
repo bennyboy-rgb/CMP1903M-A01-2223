@@ -119,7 +119,7 @@ namespace CMP1903M_A01_2223
                         }
                         else
                         {
-                            Console.WriteLine($"wrong answer, the answer is ({playgame()})");
+                            Console.WriteLine($"wrong answer");
                         }
                     }
                     else
@@ -133,84 +133,107 @@ namespace CMP1903M_A01_2223
 
         }
 
-        public static double playgame()
+        public static int playgame()
         {
             List<Card> newdeck = Pack.dealCard(3);
-            foreach (Card card in Pack.dealCard(3))
-
-
+            Console.WriteLine("This are the cards drawn!!\n");
+            foreach (Card card in newdeck)
             {
-                Console.WriteLine(card.Value);
+                Console.WriteLine(card);
             }
             if (newdeck[1].Suit == 1)
             {
                 int user_answer = 0;
-                int question = newdeck[0].Value + newdeck[2].Value;
-                Console.WriteLine(newdeck[0].Value+ "+" + newdeck[2].Value);
-                if (int.TryParse(Console.ReadLine(),out user_answer))
+               bool valid = false;
+                while (!valid)
                 {
-                    if (user_answer == question)
+                    int question = newdeck[0].Value + newdeck[2].Value;
+                    Console.WriteLine(newdeck[0].Value + "+" + newdeck[2].Value);
+                    if (int.TryParse(Console.ReadLine(), out user_answer))
                     {
-                        return 1;
+                        if (user_answer == question)
+                        {
+                            valid = true;
+                            return 1;
+                        }
+                        else
+                            valid = true;
+                            return question;
                     }
-                    else
-                        
-                        return question;
+                    else { Console.WriteLine("input an integer please"); }
                 }
-                return newdeck[0].Value + newdeck[2].Value;
             }
             else if (newdeck[1].Suit == 2)
             {
                 int user_answer = 0;
-                int question = newdeck[0].Value - newdeck[2].Value;
-                Console.WriteLine(newdeck[0].Value + "-" + newdeck[2].Value);
-                if (int.TryParse(Console.ReadLine(), out user_answer))
+                bool valid = false;
+                while (!valid)
                 {
-                    if (user_answer == question)
+                    int question = newdeck[0].Value - newdeck[2].Value;
+                    Console.WriteLine(newdeck[0].Value + "-" + newdeck[2].Value);
+                    if (int.TryParse(Console.ReadLine(), out user_answer))
                     {
-                        return 1;
+                        if (user_answer == question)
+                        {
+                            valid = true;
+                            return 1;
+                        }
+                        else
+                            valid = true;
+                            return question;
                     }
-                    else
-
-                        return question;
+                    else { Console.WriteLine("input an integer please"); }
                 }
-                return newdeck[0].Value - newdeck[2].Value;
+
             }
             else if (newdeck[1].Suit == 3)
             {
                 int user_answer = 0;
-                int question = newdeck[0].Value / newdeck[2].Value;
-                Console.WriteLine(newdeck[0].Value + "/" + newdeck[2].Value);
-                if (int.TryParse(Console.ReadLine(), out user_answer))
+                bool valid = false;
+                while (!valid)
                 {
-                    if (user_answer == question)
+                    int question = newdeck[0].Value / newdeck[2].Value;
+                    Console.WriteLine(newdeck[0].Value + "/" + newdeck[2].Value);
+                    if (int.TryParse(Console.ReadLine(), out user_answer))
                     {
-                        return 1;
+                        if (user_answer == question)
+                        {
+                            valid = true;
+                            return 1;
+                        }
+                        else
+                            valid = true;
+                            return question;
                     }
-                    else
-
-                        return question;
+                    else { Console.WriteLine("input an integer please"); }
                 }
-                return newdeck[0].Value / newdeck[2].Value;
+
+
             }
             else if (newdeck[1].Suit == 4)
             {
                 int user_answer = 0;
-                int question = newdeck[0].Value * newdeck[2].Value;
-                Console.WriteLine(newdeck[0].Value + "x" + newdeck[2].Value);
-                if (int.TryParse(Console.ReadLine(), out user_answer))
+               bool valid = false;
+                while (!valid)
                 {
-                    if (user_answer == question)
+                    int question = newdeck[0].Value * newdeck[2].Value;
+                    Console.WriteLine(newdeck[0].Value + "x" + newdeck[2].Value);
+                    if (int.TryParse(Console.ReadLine(), out user_answer))
                     {
-                        return 1;
+                        if (user_answer == question)
+                        {
+                            valid = true;
+                            return 1;
+                        }
+                        else
+                            valid = true;
+                            return question;
                     }
-                    else
-
-                        return question;
+                    else { Console.WriteLine("input an integer please"); }
                 }
-                return newdeck[0].Value * newdeck[2].Value;
+
             }
-            return 0;
+            return -1;
             //foreach (Card card in newdeck)
             //{
             //    Console.WriteLine(card.Value);
@@ -223,7 +246,7 @@ namespace CMP1903M_A01_2223
             int user_input = 0;
              while (!valid)
             {
-                Console.WriteLine("Wounld you love to try again : \n ENTER : \n (1) for Yes \n(2) to quit game ");
+                Console.WriteLine("Would you love to try again : \n ENTER : \n (1) for Yes \n(2) to quit game ");
                 if (int.TryParse(Console.ReadLine(), out user_input)) 
                 {
                     if ( user_input == 1)
