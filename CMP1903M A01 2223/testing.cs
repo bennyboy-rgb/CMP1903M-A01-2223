@@ -11,10 +11,12 @@ namespace CMP1903M_A01_2223
         static void Main(string[] args)
         {
             Pack pack = new Pack();
-            welcomeMessage.firstmessage();
-            welcomeMessage.operators();
-            welcomeMessage.sample();
+            //welcomeMessage.firstmessage();
+            //welcomeMessage.operators();
+            //welcomeMessage.sample();
 
+            WriteLogFile.WriteLog("ConsoleLog", String.Format("{0} @ {1}", "Log is Created at", DateTime.Now));
+            Console.WriteLine("Log is Written Successfully !!!");
             //Questions.first_question();
             //Questions.second_question();
             //Questions.ThirdQUestion();
