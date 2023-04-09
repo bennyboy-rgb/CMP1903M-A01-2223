@@ -11,11 +11,15 @@ namespace CMP1903M_A01_2223
         static void Main(string[] args)
         {
             Pack pack = new Pack();
+            welcomeMessage.firstmessage();
+            welcomeMessage.operators();
+            welcomeMessage.sample();
+
             //Questions.first_question();
             //Questions.second_question();
             //Questions.ThirdQUestion();
-            Questions.shufflegameMethod();
-            Questions.playAgain();
+            //Questions.shufflegameMethod();
+            //Questions.playAgain();
             Console.ReadLine();
           
         }

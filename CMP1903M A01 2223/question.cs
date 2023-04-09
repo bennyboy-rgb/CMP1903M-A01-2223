@@ -10,7 +10,7 @@ namespace CMP1903M_A01_2223
 {
     public class Questions
     {
-        public static void second_question()
+        public static void card_dealer()
         {
             int user_input = 0;
             bool valid = false;
@@ -38,7 +38,7 @@ namespace CMP1903M_A01_2223
 
 
 
-        public static void first_question()
+        public static void shuffler()
         {
             bool valid = false;
             int user_input = 0;
@@ -79,13 +79,13 @@ namespace CMP1903M_A01_2223
                     if ( user_input == 1)
                     {
                         valid = true;
-                        first_question();
-                        ThirdQUestion();
+                        shuffler();
+                        startGame();
                     }
                     else  if (user_input == 2)
                     {
                         valid = true;
-                        ThirdQUestion();
+                        startGame();
                     }
                     else
                     {
@@ -99,7 +99,7 @@ namespace CMP1903M_A01_2223
             }
         }
 
-        public static void ThirdQUestion()
+        public static void startGame()
         {
             bool valid = false;
             int user_input = 0; 
@@ -111,15 +111,14 @@ namespace CMP1903M_A01_2223
                     if (user_input== 1)
                     {
                         valid = true;
-
-                        //Console.WriteLine(playgame());
-                        if (playgame() == 1)
+                        int answer = playgame();
+                        if (answer == 1)
                         {
                             Console.WriteLine("correct answer !!");
                         }
                         else
                         {
-                            Console.WriteLine($"wrong answer");
+                            Console.WriteLine($"wrong answer, the coorect answer is ({answer})");
                         }
                     }
                     else
@@ -245,14 +244,14 @@ namespace CMP1903M_A01_2223
             bool valid = false;
             int user_input = 0;
              while (!valid)
-            {
+             {
                 Console.WriteLine("Would you love to try again : \n ENTER : \n (1) for Yes \n(2) to quit game ");
                 if (int.TryParse(Console.ReadLine(), out user_input)) 
                 {
                     if ( user_input == 1)
                     {
                         valid = true;
-                        ThirdQUestion();
+                        startGame();
                     }
                     else if(user_input == 2)
                     {
@@ -268,7 +267,7 @@ namespace CMP1903M_A01_2223
                 {
                     Console.WriteLine( "input an integer please!!");
                 }
-            }
+             }
         }
     }
     
