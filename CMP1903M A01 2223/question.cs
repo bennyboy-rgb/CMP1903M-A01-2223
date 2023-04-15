@@ -105,13 +105,13 @@ namespace CMP1903M_A01_2223
             int user_input = 0; 
             while (!valid)
             {
-                Console.WriteLine("Are you ready to play this game : \n Input : \n(1) For Yes \n(2) For No");
+                Console.WriteLine(" Do you want to draw 3 cards or 5 cards \n Enter:\n(1) To Draw 3 cards\n(2) To draw 5 cards \n(3) To Quit");
                 if (int.TryParse(Console.ReadLine(),out user_input))
                 {
                     if (user_input== 1)
                     {
                         valid = true;
-                        int answer = playgame();
+                        int answer = threeCardsLevel.playgame();
                         if (answer == 1)
                         {
                             Console.WriteLine("correct answer !!");
@@ -121,123 +121,32 @@ namespace CMP1903M_A01_2223
                             Console.WriteLine($"wrong answer, the coorect answer is ({answer})");
                         }
                     }
-                    else
+                    else if (user_input == 2)
+                    {
+                        valid = true;
+                        int answer = fiveCardsLevel.playgame2();
+                        if (answer == 1)
+                        {
+                            Console.WriteLine("Correct answer!!");
+                        }
+                        else
+                        { Console.WriteLine($"Wrong Answer, The correct answer is {answer}"); }
+                    }
+                    else if(user_input == 3)
                     {
                         valid = true;
                         Console.WriteLine("Thank you for your time");
                     }
                 }
+                else
+                {
+                    Console.WriteLine("input an integer please!!");
+                }
 
             }
 
         }
 
-        public static int playgame()
-        {
-            List<Card> newdeck = Pack.dealCard(3);
-            Console.WriteLine("This are the cards drawn!!\n");
-            foreach (Card card in newdeck)
-            {
-                Console.WriteLine(card);
-            }
-            if (newdeck[1].Suit == 1)
-            {
-                int user_answer = 0;
-               bool valid = false;
-                while (!valid)
-                {
-                    int question = newdeck[0].Value + newdeck[2].Value;
-                    Console.WriteLine(newdeck[0].Value + "+" + newdeck[2].Value);
-                    if (int.TryParse(Console.ReadLine(), out user_answer))
-                    {
-                        if (user_answer == question)
-                        {
-                            valid = true;
-                            return 1;
-                        }
-                        else
-                            valid = true;
-                            return question;
-                    }
-                    else { Console.WriteLine("input an integer please"); }
-                }
-            }
-            else if (newdeck[1].Suit == 2)
-            {
-                int user_answer = 0;
-                bool valid = false;
-                while (!valid)
-                {
-                    int question = newdeck[0].Value - newdeck[2].Value;
-                    Console.WriteLine(newdeck[0].Value + "-" + newdeck[2].Value);
-                    if (int.TryParse(Console.ReadLine(), out user_answer))
-                    {
-                        if (user_answer == question)
-                        {
-                            valid = true;
-                            return 1;
-                        }
-                        else
-                            valid = true;
-                            return question;
-                    }
-                    else { Console.WriteLine("input an integer please"); }
-                }
-
-            }
-            else if (newdeck[1].Suit == 3)
-            {
-                int user_answer = 0;
-                bool valid = false;
-                while (!valid)
-                {
-                    int question = newdeck[0].Value / newdeck[2].Value;
-                    Console.WriteLine(newdeck[0].Value + "/" + newdeck[2].Value);
-                    if (int.TryParse(Console.ReadLine(), out user_answer))
-                    {
-                        if (user_answer == question)
-                        {
-                            valid = true;
-                            return 1;
-                        }
-                        else
-                            valid = true;
-                            return question;
-                    }
-                    else { Console.WriteLine("input an integer please"); }
-                }
-
-
-            }
-            else if (newdeck[1].Suit == 4)
-            {
-                int user_answer = 0;
-               bool valid = false;
-                while (!valid)
-                {
-                    int question = newdeck[0].Value * newdeck[2].Value;
-                    Console.WriteLine(newdeck[0].Value + "x" + newdeck[2].Value);
-                    if (int.TryParse(Console.ReadLine(), out user_answer))
-                    {
-                        if (user_answer == question)
-                        {
-                            valid = true;
-                            return 1;
-                        }
-                        else
-                            valid = true;
-                            return question;
-                    }
-                    else { Console.WriteLine("input an integer please"); }
-                }
-
-            }
-            return -1;
-            //foreach (Card card in newdeck)
-            //{
-            //    Console.WriteLine(card.Value);
-            //}
-        }
 
         public static void playAgain()
         {
