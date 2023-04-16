@@ -15,7 +15,7 @@ namespace CMP1903M_A01_2223
             welcomeMessage.operators();
             welcomeMessage.sample();
 
-            //WriteLogFile.WriteLog("ConsoleLog", String.Format("{0} @ {1}", "Log is Created at", DateTime.Now));
+            WriteLogFile.WriteLog("ConsoleLog", String.Format("{0} @ {1}", "Log is Created at", DateTime.Now));
             //Console.WriteLine("Log is Written Successfully !!!");
            
             Questions.shufflegameMethod();

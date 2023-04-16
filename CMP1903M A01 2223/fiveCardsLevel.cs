@@ -22,7 +22,8 @@ namespace CMP1903M_A01_2223
                 bool valid = false;
                 while (!valid)
                 {
-                    int question = cards[0].Value + cards[2].Value + cards[4].Value;
+                    float question_asked = (float)cards[0].Value + (float)cards[2].Value + (float)cards[4].Value;
+                    int question = (int)question_asked;
                     Console.WriteLine(cards[0].Value + "+" + cards[2].Value + "+" + cards[4].Value);
                     if (int.TryParse(Console.ReadLine(), out user_answer))
                     {
@@ -49,7 +50,8 @@ namespace CMP1903M_A01_2223
                 bool valid = false;
                 while (!valid)
                 {
-                    int question = cards[0].Value + cards[2].Value - cards[4].Value;
+                    float question_asked = (float)cards[0].Value + (float)cards[2].Value - (float)cards[4].Value;
+                    int question = (int)question_asked;
                     Console.WriteLine(cards[0].Value + "+" + cards[2].Value + "-" + cards[4].Value);
                     if (int.TryParse(Console.ReadLine(), out user_answer))
                     {
@@ -73,7 +75,8 @@ namespace CMP1903M_A01_2223
                 bool valid = false;
                 while (!valid)
                 {
-                    int question = cards[0].Value + cards[2].Value * cards[4].Value;
+                    float question_asked = (float)cards[0].Value + (float)cards[2].Value * (float)cards[4].Value;
+                    int question = (int)question_asked;
                     Console.WriteLine(cards[0].Value + "+" + cards[2].Value + "x" + cards[4].Value);
                     if (int.TryParse(Console.ReadLine(), out user_answer))
                     {
@@ -100,7 +103,8 @@ namespace CMP1903M_A01_2223
                 bool valid = false;
                 while (!valid)
                 {
-                    int question = cards[0].Value + cards[2].Value / cards[4].Value;
+                    float question_asked = (float)cards[0].Value + (float)cards[2].Value / (float)cards[4].Value;
+                    int question = (int)question_asked;
                     Console.WriteLine(cards[0].Value + "+" + cards[2].Value + "/" + cards[4].Value);
                     if (int.TryParse(Console.ReadLine(), out user_answer))
                     {
@@ -127,7 +131,8 @@ namespace CMP1903M_A01_2223
                 bool valid = false;
                 while (!valid)
                 {
-                    int question = cards[0].Value - cards[2].Value + cards[4].Value;
+                    float question_asked = (float)cards[0].Value - (float)cards[2].Value + (float)cards[4].Value;
+                    int question = (int)question_asked;
                     Console.WriteLine(cards[0].Value + "-" + cards[2].Value + "+" + cards[4].Value);
                     if (int.TryParse(Console.ReadLine(), out user_answer))
                     {
@@ -154,7 +159,8 @@ namespace CMP1903M_A01_2223
                 bool valid = false;
                 while (!valid)
                 {
-                    int question = cards[0].Value - cards[2].Value - cards[4].Value;
+                    float question_asked = (float)cards[0].Value - (float)cards[2].Value - (float)cards[4].Value;
+                    int question = (int)question_asked;
                     Console.WriteLine(cards[0].Value + "-" + cards[2].Value + "-" + cards[4].Value);
                     if (int.TryParse(Console.ReadLine(), out user_answer))
                     {
@@ -181,7 +187,8 @@ namespace CMP1903M_A01_2223
                 bool valid = false;
                 while (!valid)
                 {
-                    int question = cards[0].Value - cards[2].Value / cards[4].Value;
+                    float question_asked = (float)cards[0].Value - (float)cards[2].Value / (float)cards[4].Value;
+                    int question = (int)question_asked;
                     Console.WriteLine(cards[0].Value + "-" + cards[2].Value + "/" + cards[4].Value);
                     if (int.TryParse(Console.ReadLine(), out user_answer))
                     {
@@ -208,7 +215,8 @@ namespace CMP1903M_A01_2223
                 bool valid = false;
                 while (!valid)
                 {
-                    int question = cards[0].Value - cards[2].Value * cards[4].Value;
+                    float question_asked = (float)cards[0].Value - (float)cards[2].Value * (float)cards[4].Value;
+                    int question = (int)question_asked;
                     Console.WriteLine(cards[0].Value + "-" + cards[2].Value + "x" + cards[4].Value);
                     if (int.TryParse(Console.ReadLine(), out user_answer))
                     {
@@ -235,7 +243,9 @@ namespace CMP1903M_A01_2223
                 bool valid = false;
                 while (!valid)
                 {
-                    int question = cards[0].Value / cards[2].Value + cards[4].Value;
+                    float question_asked = (float)cards[0].Value / (float)cards[2].Value + (float)cards[4].Value;
+                    int question = (int)question_asked;
+
                     Console.WriteLine(cards[0].Value + "/" + cards[2].Value + "+" + cards[4].Value);
                     if (int.TryParse(Console.ReadLine(), out user_answer))
                     {
@@ -262,7 +272,8 @@ namespace CMP1903M_A01_2223
                 bool valid = false;
                 while (!valid)
                 {
-                    int question = cards[0].Value / cards[2].Value - cards[4].Value;
+                    float question_asked = (float)cards[0].Value / (float)cards[2].Value - (float)cards[4].Value;
+                    int question = (int)question_asked;
                     Console.WriteLine(cards[0].Value + "/" + cards[2].Value + "-" + cards[4].Value);
                     if (int.TryParse(Console.ReadLine(), out user_answer))
                     {
@@ -289,7 +300,8 @@ namespace CMP1903M_A01_2223
                 bool valid = false;
                 while (!valid)
                 {
-                    int question = cards[0].Value / cards[2].Value / cards[4].Value;
+                    float question_asked = (float)cards[0].Value / (float)cards[2].Value / (float)cards[4].Value;
+                    int question = (int)question_asked;
                     Console.WriteLine(cards[0].Value + "/" + cards[2].Value + "/" + cards[4].Value);
                     if (int.TryParse(Console.ReadLine(), out user_answer))
                     {
@@ -316,7 +328,8 @@ namespace CMP1903M_A01_2223
                 bool valid = false;
                 while (!valid)
                 {
-                    int question = cards[0].Value / cards[2].Value * cards[4].Value;
+                    float question_asked = (float)cards[0].Value / (float)cards[2].Value * (float)cards[4].Value;
+                    int question = (int)question_asked;
                     Console.WriteLine(cards[0].Value + "/" + cards[2].Value + "x" + cards[4].Value);
                     if (int.TryParse(Console.ReadLine(), out user_answer))
                     {
@@ -343,7 +356,8 @@ namespace CMP1903M_A01_2223
                 bool valid = false;
                 while (!valid)
                 {
-                    int question = cards[0].Value * cards[2].Value + cards[4].Value;
+                    float question_asked = (float)cards[0].Value * (float)cards[2].Value + (float)cards[4].Value;
+                    int question = (int)question_asked;
                     Console.WriteLine(cards[0].Value + "x" + cards[2].Value + "+" + cards[4].Value);
                     if (int.TryParse(Console.ReadLine(), out user_answer))
                     {
@@ -370,7 +384,8 @@ namespace CMP1903M_A01_2223
                 bool valid = false;
                 while (!valid)
                 {
-                    int question = cards[0].Value * cards[2].Value - cards[4].Value;
+                    float question_asked = (float)cards[0].Value * (float)cards[2].Value - (float)cards[4].Value;
+                    int question = (int)question_asked;
                     Console.WriteLine(cards[0].Value + "x" + cards[2].Value + "-" + cards[4].Value);
                     if (int.TryParse(Console.ReadLine(), out user_answer))
                     {
@@ -397,7 +412,8 @@ namespace CMP1903M_A01_2223
                 bool valid = false;
                 while (!valid)
                 {
-                    int question = cards[0].Value * cards[2].Value / cards[4].Value;
+                    float question_asked = (float)cards[0].Value * (float) cards[2].Value / (float)cards[4].Value;
+                    int question = (int)question_asked;
                     Console.WriteLine(cards[0].Value + "x" + cards[2].Value + "/" + cards[4].Value);
                     if (int.TryParse(Console.ReadLine(), out user_answer))
                     {
@@ -424,7 +440,8 @@ namespace CMP1903M_A01_2223
                 bool valid = false;
                 while (!valid)
                 {
-                    int question = cards[0].Value * cards[2].Value * cards[4].Value;
+                    float question_asked =  (float)cards[0].Value * (float)cards[2].Value * (float)cards[4].Value;
+                    int question = (int)question_asked;
                     Console.WriteLine(cards[0].Value + "x" + cards[2].Value + "x" + cards[4].Value);
                     if (int.TryParse(Console.ReadLine(), out user_answer))
                     {
