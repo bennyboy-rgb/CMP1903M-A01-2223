@@ -19,7 +19,6 @@ namespace CMP1903M_A01_2223
                 {
                     Card card = new Card(i,j); //ceates the cards in that sequence
                     pack.Add(card);
-                  
                 }
             }
         }
@@ -34,24 +33,19 @@ namespace CMP1903M_A01_2223
             else if (typeOfShuffle == 2)
             {
                 return riffle_shuffle_metthod();
-
             }
             else if (typeOfShuffle == 3)
             {
                 Console.WriteLine("No shuffle");
                 return true;
             }
-           
             return false;
-
         }
         public static Card deal()
         {
-           
             Card card = pack.First();
             pack.Remove(card);
             return card;
-
         }
         public static List<Card> dealCard(int amount)
         {
@@ -61,19 +55,15 @@ namespace CMP1903M_A01_2223
             {
                     pack.Remove(card);
             }
-
             return cardsToReturn;
         }
         public static bool fisher_yates_method() 
         {
-
             Random random = new Random();
             for ( int i = pack.Count; i <= 0; i--)
             {
                 int j = random.Next(0,i);
                 (pack[i], pack[j]) = (pack[j], pack[i]);// picks card randomly and places it ontop 
-                
-
             }
             Console.WriteLine("Fisher_yates shuffle method !!");
             return true; 
