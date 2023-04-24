@@ -80,12 +80,12 @@ namespace CMP1903M_A01_2223
                     {
                         valid = true;
                         shuffler();
-                        startGame();
+                        MainMenu.menu();
                     }
                     else  if (user_input == 2)
                     {
                         valid = true;
-                        startGame();
+                        MainMenu.menu();
                     }
                     else
                     {
@@ -99,53 +99,6 @@ namespace CMP1903M_A01_2223
             }
         }
 
-        public static void startGame()
-        {
-            bool valid = false;
-            int user_input = 0; 
-            while (!valid)
-            {
-                Console.WriteLine(" Do you want to draw 3 cards or 5 cards \n Enter:\n(1) To Draw 3 cards\n(2) To draw 5 cards \n(3) To Quit");
-                if (int.TryParse(Console.ReadLine(),out user_input))
-                {
-                    if (user_input== 1)
-                    {
-                        valid = true;
-                        int answer = threeCardsLevel.playgame();
-                        if (answer == 1)
-                        {
-                            Console.WriteLine("correct answer !!");
-                        }
-                        else
-                        {
-                            Console.WriteLine($"wrong answer, the coorect answer is ({answer})");
-                        }
-                    }
-                    else if (user_input == 2)
-                    {
-                        valid = true;
-                        int answer = fiveCardsLevel.playgame2();
-                        if (answer == 1)
-                        {
-                            Console.WriteLine("Correct answer!!");
-                        }
-                        else
-                        { Console.WriteLine($"Wrong Answer, The correct answer is {answer}"); }
-                    }
-                    else if(user_input == 3)
-                    {
-                        valid = true;
-                        Console.WriteLine("Thank you for your time");
-                    }
-                }
-                else
-                {
-                    Console.WriteLine("input an integer please!!");
-                }
-
-            }
-
-        }
 
 
         public static void playAgain()
@@ -160,7 +113,7 @@ namespace CMP1903M_A01_2223
                     if ( user_input == 1)
                     {
                         valid = true;
-                        startGame();
+                        MainMenu.menu();
                     }
                     else if(user_input == 2)
                     {

@@ -11,15 +11,17 @@ namespace CMP1903M_A01_2223
         static void Main(string[] args)
         {
             Pack pack = new Pack();
-            welcomeMessage.firstmessage();
-            welcomeMessage.operators();
-            welcomeMessage.sample();
-
+            MainMenu.menu();
+            
+            /*Help.firstmessage();
+            Help.operators();
+            Help.sample();
+            
             WriteLogFile.WriteLog("ConsoleLog", String.Format("{0} @ {1}", "Log is Created at", DateTime.Now));
             //Console.WriteLine("Log is Written Successfully !!!");
            
             Questions.shufflegameMethod();
-            Questions.playAgain();
+            Questions.playAgain();*/
             Console.ReadLine();
           
         }
