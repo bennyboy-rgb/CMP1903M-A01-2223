@@ -48,12 +48,14 @@
     <Compile Include="Help.cs" />
     <Compile Include="logfile.cs" />
     <Compile Include="MainMenu.cs" />
+    <Compile Include="operation.cs" />
     <Compile Include="Pack.cs" />
     <Compile Include="testing.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="question.cs" />
     <Compile Include="threeCardsLevel.cs" />
     <Compile Include="Messages.cs" />
+    <Compile Include="threelevel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
