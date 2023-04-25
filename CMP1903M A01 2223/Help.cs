@@ -71,7 +71,7 @@ namespace CMP1903M_A01_2223
                     else if ( userInput == 2)
                     {
                         valid = true;
-                        Messages.goodByeMessage("Thank you for your time!!");
+                        Messages.goodByeMessage();
                     }
                 }
                 else 

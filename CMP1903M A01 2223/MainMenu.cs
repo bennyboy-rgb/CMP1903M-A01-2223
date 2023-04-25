@@ -16,25 +16,20 @@ namespace CMP1903M_A01_2223
             {
 
                 Console.WriteLine("Enter :");
-                Console.WriteLine("(1) for easy level");
-                Console.WriteLine("(2) for Hard level");
-                Console.WriteLine("(3) for Help");
-                /*                Console.WriteLine(" Do you want to draw 3 cards or 5 cards \n Enter:\n(1) To Draw 3 cards\n(2) To draw 5 cards \n(3) To Quit");
-                */
+                Console.WriteLine("(1) For easy level");
+                Console.WriteLine("(2) For Hard level");
+                Console.WriteLine("(3) For Help");
+                Console.WriteLine("(4) To quit");
+
                 if (int.TryParse(Console.ReadLine(), out user_input))
                 {
                     if (user_input == 1)
                     {
                         valid = true;
-                        int answer = threeCardsLevel.playgame();
-                        if (answer == 1)
-                        {
-                            Console.WriteLine("correct answer !!");
-                        }
-                        else
-                        {
-                            Console.WriteLine($"wrong answer, the coorect answer is ({answer})");
-                        }
+                        Questions.shufflegameMethod();
+                        threeCardslevel threelevel = new threeCardslevel();
+                        threelevel.OutputEquation();
+                        threelevel.userInput();
                     }
                     else if (user_input == 2)
                     {
@@ -55,6 +50,11 @@ namespace CMP1903M_A01_2223
                         Help.sample1();
                         Help.sample2();
                         Help.back();
+                    }
+                    else if (user_input == 4)
+                    {
+                        valid = true;
+                        Messages.goodByeMessage();
                     }
                 }
                 else

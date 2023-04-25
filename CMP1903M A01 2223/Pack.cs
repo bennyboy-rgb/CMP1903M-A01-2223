@@ -60,12 +60,15 @@ namespace CMP1903M_A01_2223
         public static bool fisher_yates_method() 
         {
             Random random = new Random();
-            for ( int i = pack.Count; i <= 0; i--)
+            List<Card> shuffledPack = new List<Card>(pack);
+            for ( int i = pack.Count-1; i >= 0; i--)
             {
+                
                 int j = random.Next(0,i);
-                (pack[i], pack[j]) = (pack[j], pack[i]);// picks card randomly and places it ontop 
+                (shuffledPack[i], shuffledPack[j]) = (shuffledPack[j], shuffledPack[i]);// picks card randomly and places it ontop 
             }
             Console.WriteLine("Fisher_yates shuffle method !!");
+            pack = shuffledPack;
             return true; 
         }
         public static bool riffle_shuffle_metthod()

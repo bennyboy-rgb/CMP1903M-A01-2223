@@ -52,7 +52,7 @@ namespace CMP1903M_A01_2223
                     {
                         valid = true;
                         Pack.shuffleCardPack(user_input);
-                        Pack.parkprinter();
+                       // Pack.parkprinter();
                     }
                     else
                     {
@@ -69,6 +69,7 @@ namespace CMP1903M_A01_2223
 
         public static void shufflegameMethod()
         {
+           
             int user_input = 0;
             bool valid = false;
             while (!valid)
@@ -79,8 +80,9 @@ namespace CMP1903M_A01_2223
                     if ( user_input == 1)
                     {
                         valid = true;
-                        shuffler();
-                        MainMenu.menu();
+                        Random random = new Random();
+                        int index = random.Next(1, 3);
+                        Pack.shuffleCardPack(index);
                     }
                     else  if (user_input == 2)
                     {
@@ -118,7 +120,7 @@ namespace CMP1903M_A01_2223
                     else if(user_input == 2)
                     {
                         valid = true;
-                        Console.WriteLine("Thank you for your time!!");
+                        Messages.goodByeMessage();
                     }
                     else
                     {

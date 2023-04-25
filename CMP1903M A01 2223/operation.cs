@@ -34,13 +34,24 @@ namespace CMP1903M_A01_2223
             }
           else if (_operand == 3)
             {
-                return _num1 * _num2;
+                return _num1 / _num2;
             }
           else if(_operand == 4)
             {
                 return _num1 * _num2;
             }
             return 0;
+        }
+
+        public override string ToString()
+        {
+            char operatorCharacter = '0';
+            if (_operand == 1) operatorCharacter = '+';
+            else if (_operand == 2) { operatorCharacter = '-'; }
+            else if ( _operand == 3) { operatorCharacter = '/'; }
+            else if (_operand ==4){ operatorCharacter = 'X'; }
+            return $"{_num1} {operatorCharacter} {_num2}";
+
         }
     }
 }

@@ -13,9 +13,9 @@ namespace CMP1903M_A01_2223
         {
             Console.WriteLine(message);
         }
-        public static void goodByeMessage(string message)
+        public static void goodByeMessage()
         {
-            Console.WriteLine(message);
+            Console.WriteLine("Thank you for your time !!");
         }
     }
 
