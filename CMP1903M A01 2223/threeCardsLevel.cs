@@ -21,7 +21,7 @@ namespace CMP1903M_A01_2223
         }
         public virtual double evaluate()
         {
-            operation operate = new operation(cards[0].Value, cards[2].Value, cards[1].Suit);
+            dynamic operate = new operation(cards[0].Value, cards[2].Value, cards[1].Suit);
             Console.WriteLine(operate.ToString());
             double x = operate.performance();
 
