@@ -35,13 +35,15 @@ namespace CMP1903M_A01_2223
                     else if (user_input == 2)
                     {
                         valid = true;
-                        int answer = fiveCardsLevel.playgame2();
+                     /*   int answer = fiveCardsLevel.playgame2();
                         if (answer == 1)
                         {
                             Console.WriteLine("Correct answer!!");
                         }
                         else
-                        { Console.WriteLine($"Wrong Answer, The correct answer is {answer}"); }
+                        { Console.WriteLine($"Wrong Answer, The correct answer is {answer}"); }*/
+                     dynamic hard_level= new fiveCardsLevel();
+                        hard_level.evaluate();
                     }
                     else if (user_input == 3)
                     {
