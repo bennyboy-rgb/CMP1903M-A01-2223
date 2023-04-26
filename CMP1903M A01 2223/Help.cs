@@ -37,7 +37,7 @@ namespace CMP1903M_A01_2223
             {
                 Console.WriteLine(cards[i]);
             }
-            Console.WriteLine($"Unlike the easy level, we need 2 operators and 3 numbers here.\n here, 5 cards are drawn, the first card drawn here is ({cards[0]}), the value which is ({cards[0].Value}] is taken as the first number and the suit is ignored");
+            Console.WriteLine($"Unlike the easy level\n here, 5 cards are drawn, the first card drawn here is ({cards[0]}), the value which is ({cards[0].Value}] is taken as the first number and the suit is ignored");
             Console.WriteLine($"To get the first operatorwe pick the suit number which is ({cards[1].Suit}) which can be seen at the top of the page");
             Console.WriteLine($" The next number which is ({cards[2].Value}) and so on" );
            

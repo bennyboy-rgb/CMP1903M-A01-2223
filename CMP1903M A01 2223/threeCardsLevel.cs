@@ -43,21 +43,22 @@ namespace CMP1903M_A01_2223
                     if (input == answer)
                     {
                         valid = true;
-                        Console.WriteLine("yayy, correct answer!!");
+                        Console.WriteLine("Yayy, correct answer!!");
                     }
                     else
                     {
-                        valid = true;
-                        Console.WriteLine(" arghhh, wrong asnwer try again");
+                        /*valid = true;*/
+                        Console.WriteLine(" Arghhh, wrong answer!!");
                         
                         counter++;
-                        /* if (counter < 2)
+                        if (counter < 2)
+                        {
+                            /*valid = true;*/
+                            Console.Write("Try again : ");
+                        }
+                       else if (counter == 2)
                         {
                             valid = true;
-                            Console.Write("Try again : ");
-                        }*/
-                        if (counter == 2)
-                        {
                             Console.WriteLine($"The correct answer is {answer}");
                             
                         }

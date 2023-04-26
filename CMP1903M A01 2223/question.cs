@@ -87,7 +87,8 @@ namespace CMP1903M_A01_2223
                     else  if (user_input == 2)
                     {
                         valid = true;
-                        MainMenu.menu();
+                        //MainMenu.menu();
+                        Pack.shuffleCardPack(3);
                     }
                     else
                     {

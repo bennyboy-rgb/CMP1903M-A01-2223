@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CMP1903M_A01_2223
 {
-    internal class MainMenu
+    class MainMenu
     {
         public static void menu()
         {
@@ -27,7 +27,7 @@ namespace CMP1903M_A01_2223
                     {
                         valid = true;
                         Questions.shufflegameMethod();
-                        threeCardslevel threelevel = new threeCardslevel();
+                        dynamic threelevel= new threeCardslevel();
                         threelevel.OutputEquation();
                         threelevel.userInput();
                     }
