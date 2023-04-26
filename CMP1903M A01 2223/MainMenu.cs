@@ -42,7 +42,7 @@ namespace CMP1903M_A01_2223
                         }
                         else
                         { Console.WriteLine($"Wrong Answer, The correct answer is {answer}"); }*/
-                     dynamic hard_level= new fiveCardsLevel();
+                     dynamic hard_level= new fivelevels();
                         hard_level.evaluate();
                     }
                     else if (user_input == 3)

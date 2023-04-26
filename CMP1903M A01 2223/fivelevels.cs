@@ -21,19 +21,25 @@ namespace CMP1903M_A01_2223
         }
         public override double evaluate()
         {
-            double x = 0;
-            if (cards[1].Suit >= cards[3].Suit) {
-                dynamic operatr1 = new operation(cards[0].Value, cards[2].Value, cards[1].Suit);
-                Console.WriteLine(operatr1.ToSTring());
-                x = operatr1.performance();
-            }
-            else if (cards[1].Suit < cards[3].Suit) 
-            {
-                dynamic operatr1 = new operation(cards[2].Value, cards[4].Value, cards[3].Suit);
-                Console.WriteLine(operatr1.ToSTring());
-                x = operatr1.performance();
-            }
+            //double x = 0;
+            //if (cards[1].Suit >= cards[3].Suit) {
+            //    operation operatr1 = new operation(cards[0].Value, cards[2].Value, cards[1].Suit);
+            //    Console.WriteLine(operatr1.ToString());
+            //    x = operatr1.performance();
+            //}
+            //else if (cards[1].Suit < cards[3].Suit) 
+            //{
+            //    operation operatr1 = new operation(cards[2].Value, cards[4].Value, cards[3].Suit);
+            //    Console.WriteLine(operatr1.ToString());
+            //    x = operatr1.performance();
+            //}
+            //return x;
+
+            dynamic operate = new operation(cards[0].Value, cards[2].Value, cards[4].Value, cards[1].Suit, cards[3].Suit);
+            Console.WriteLine(operate.ToString());
+            double x = operate.performance();
             return x;
-        } 
+
+        }
     }
 }
