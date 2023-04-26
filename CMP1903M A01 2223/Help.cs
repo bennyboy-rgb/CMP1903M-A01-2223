@@ -66,7 +66,8 @@ namespace CMP1903M_A01_2223
                     if(userInput == 1)
                     {
                         valid = true;
-                        MainMenu.menu();
+                        dynamic tutorial = new MainMenu();
+                        tutorial.menu();
                     }
                     else if ( userInput == 2)
                     {

@@ -11,8 +11,9 @@ namespace CMP1903M_A01_2223
         static void Main(string[] args)
         {
             Pack pack = new Pack();
-            dynamic tutor = new MainMenu();
-            tutor.menu();
+            dynamic tutorial = new MainMenu();
+            tutorial.menu();
+
 
             //threelevel threelevel = new threelevel();
             //threelevel.OutputEquation();

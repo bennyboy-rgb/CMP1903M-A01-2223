@@ -48,7 +48,7 @@ namespace CMP1903M_A01_2223
                     else
                     {
                         /*valid = true;*/
-                        Console.WriteLine(" Arghhh, wrong answer!!");
+                        Console.WriteLine("\nArghhh, wrong answer!!");
                         
                         counter++;
                         if (counter < 2)
@@ -59,7 +59,7 @@ namespace CMP1903M_A01_2223
                        else if (counter == 2)
                         {
                             valid = true;
-                            Console.WriteLine($"The correct answer is {answer}");
+                            Console.WriteLine($"The correct answer is {answer}\n");
                             
                         }
                     }

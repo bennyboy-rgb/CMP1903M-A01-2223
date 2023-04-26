@@ -87,7 +87,6 @@ namespace CMP1903M_A01_2223
                     else  if (user_input == 2)
                     {
                         valid = true;
-                        //MainMenu.menu();
                         Pack.shuffleCardPack(3);
                     }
                     else
@@ -104,7 +103,7 @@ namespace CMP1903M_A01_2223
 
 
 
-        public static void playAgain()
+        public  void playAgain()
         {
             bool valid = false;
             int user_input = 0;
@@ -116,7 +115,8 @@ namespace CMP1903M_A01_2223
                     if ( user_input == 1)
                     {
                         valid = true;
-                        MainMenu.menu();
+                        dynamic tutorial = new MainMenu();
+                        tutorial.menu();
                     }
                     else if(user_input == 2)
                     {

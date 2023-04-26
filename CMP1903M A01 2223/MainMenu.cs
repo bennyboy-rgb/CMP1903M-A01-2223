@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace CMP1903M_A01_2223
 {
-    class MainMenu
+    internal class MainMenu
     {
-        public static void menu()
+        
+        public void menu()
         {
             bool valid = false;
             int user_input = 0;
@@ -64,7 +65,10 @@ namespace CMP1903M_A01_2223
 
             }
 
+            dynamic playerchoice = new Questions();
+            playerchoice.playAgain();
         }
+        
 
       
     }
