@@ -12,13 +12,20 @@ namespace CMP1903M_A01_2223
     {
         List<Card> cards = Pack.dealCard(5);
 
-        public void OutputEquation()
+        public override void OutputEquation()
         {
             foreach (Card card in cards)
             {
                 Console.WriteLine(card);
             }
         }
+/*        public void OutputEquation()
+        {
+            foreach (Card card in cards)
+            {
+                Console.WriteLine(card);
+            }
+        }*/
         public override double evaluate()
         {
             //double x = 0;
@@ -40,6 +47,10 @@ namespace CMP1903M_A01_2223
             double x = operate.performance();
             return x;
 
+        }
+        public override void userInput()
+        {
+            
         }
     }
 }

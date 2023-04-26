@@ -12,7 +12,7 @@ namespace CMP1903M_A01_2223
     
         List<Card> cards = Pack.dealCard(3);
 
-        public void OutputEquation()
+        public virtual void OutputEquation()
         {
             foreach (Card card in cards)
             {
@@ -29,16 +29,16 @@ namespace CMP1903M_A01_2223
             
         }
 
-        public void userInput()
+        public virtual void userInput()
         { 
 
             bool valid = false;
             int counter = 0;
-            int  input = 0;
+            float  input = 0;
             while (!valid)
             {
                 double answer= evaluate();
-                if (int.TryParse(Console.ReadLine(),out input)){
+                if (float.TryParse(Console.ReadLine(),out input)){
 
                     if (input == answer)
                     {

@@ -16,6 +16,7 @@ namespace CMP1903M_A01_2223
         public static void goodByeMessage()
         {
             Console.WriteLine("Thank you for your time !!");
+            Console.WriteLine("Press enter key to exit ...");
         }
     }
 

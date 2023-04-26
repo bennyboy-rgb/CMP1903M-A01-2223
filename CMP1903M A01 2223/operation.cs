@@ -12,10 +12,10 @@ namespace CMP1903M_A01_2223
      class operation
     {
           public double _num1;
-         public double _num2;
-        public double _num3;
-         public int _operand;
-        public int _operand2;
+          public double _num2;
+          public double _num3;
+          public int _operand;
+          public int _operand2;
         
         public operation(double num1, double num2, int operand)
         {
@@ -66,7 +66,7 @@ namespace CMP1903M_A01_2223
             char operator2Character = operatorTocharacter(_operand2);
            
             
-            return $"{_num1} {operator1Character} {_num2} {operator2Character} {_num3}";
+            return $"{_num1} {operator1Character} {_num2} {operator2Character} {_num3} = ?";
 
         }
     }

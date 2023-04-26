@@ -8,7 +8,8 @@ namespace CMP1903M_A01_2223
 {
     internal class MainMenu
     {
-        
+
+
         public void menu()
         {
             bool valid = false;
@@ -31,6 +32,10 @@ namespace CMP1903M_A01_2223
                         dynamic threelevel= new threeCardslevel();
                         threelevel.OutputEquation();
                         threelevel.userInput();
+                        dynamic playerchoice = new Questions();
+
+                        playerchoice.playAgain();
+
                     }
                     else if (user_input == 2)
                     {
@@ -67,8 +72,6 @@ namespace CMP1903M_A01_2223
 
             }
 
-            dynamic playerchoice = new Questions();
-            playerchoice.playAgain();
         }
         
 
