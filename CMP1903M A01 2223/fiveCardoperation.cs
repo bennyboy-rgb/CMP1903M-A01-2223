@@ -4,13 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-/*namespace CMP1903M_A01_2223
+namespace CMP1903M_A01_2223
 {
-    internal class fiveCardoperation :operation
+    internal class fiveCardoperation : operation
     {
-        public override double performance()
+        public override
+        public override string ToString()
         {
-            return base.performance();
+            return base.ToString();
         }
+        
     }
-}*/
+}
