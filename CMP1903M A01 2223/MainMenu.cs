@@ -8,8 +8,6 @@ namespace CMP1903M_A01_2223
 {
     internal class MainMenu
     {
-
-
         public void menu()
         {
             
@@ -34,9 +32,10 @@ namespace CMP1903M_A01_2223
                     {
                         valid = true;
                         Questions.shufflegameMethod();
-                        
-                        threeCardslevel level = new threeCardslevel();
-                        level.userInput(level.evaluate());
+                        Console.WriteLine(messages.CardDrawnMessages());
+                        threeCardslevel easy_level = new threeCardslevel();
+                        easy_level.Equation();
+                        easy_level.userInput(easy_level.evaluate());
                         dynamic playerchoice = new Questions();
 
                         playerchoice.playAgain();
@@ -46,7 +45,9 @@ namespace CMP1903M_A01_2223
                     {
                         valid = true;
                         Questions.shufflegameMethod();
+                        Console.WriteLine(messages.CardDrawnMessages());
                         dynamic hard_level= new fivelevels();
+                        hard_level.Equation();
                         hard_level.userInput(hard_level.evaluate());
                         dynamic playerchoice = new Questions();
 

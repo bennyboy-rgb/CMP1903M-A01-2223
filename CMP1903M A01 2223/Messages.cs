@@ -12,18 +12,23 @@ namespace CMP1903M_A01_2223
        
         string goodByeMessage();
         string welcomemessage();
+        string CardDrawnMessages();
     }
      class Messages : Imessages
     {
-        public string welcomemessage()
+        public virtual string welcomemessage()
         {
             return "Hello, welcome to the math tutor application !!";
         }
-        public string goodByeMessage()
+        public virtual string goodByeMessage()
         {
             return "Thank you for your time !! \nPress enter key to exit ...";
           /*  Console.WriteLine("Thank you for your time !!");
             Console.WriteLine("Press enter key to exit ...");*/
+        }
+        public virtual string CardDrawnMessages()
+        {
+            return "These are your cards drawn from the deck!! \n";
         }
     }
 
