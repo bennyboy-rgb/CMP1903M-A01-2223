@@ -13,6 +13,9 @@ namespace CMP1903M_A01_2223
             Pack pack = new Pack();
             dynamic tutorial = new MainMenu();
             tutorial.menu();
+            WriteLogFile.WriteLog("ConsoleLog", String.Format("{0} @ {1}", "Log is Created at", DateTime.Now));
+            Console.WriteLine("Log is Written Successfully !!!");
+          
 
 
             //threelevel threelevel = new threelevel();

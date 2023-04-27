@@ -7,16 +7,23 @@ using System.Threading.Tasks;
 
 namespace CMP1903M_A01_2223
 {
-    internal class Messages
+    interface Imessages
     {
-        public static void welcomemessage(string message)
+       
+        string goodByeMessage();
+        string welcomemessage();
+    }
+     class Messages : Imessages
+    {
+        public string welcomemessage()
         {
-            Console.WriteLine(message);
+            return "Hello, welcome to the math tutor application !!";
         }
-        public static void goodByeMessage()
+        public string goodByeMessage()
         {
-            Console.WriteLine("Thank you for your time !!");
-            Console.WriteLine("Press enter key to exit ...");
+            return "Thank you for your time !! \nPress enter key to exit ...";
+          /*  Console.WriteLine("Thank you for your time !!");
+            Console.WriteLine("Press enter key to exit ...");*/
         }
     }
 

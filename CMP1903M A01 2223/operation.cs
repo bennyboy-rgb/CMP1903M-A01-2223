@@ -9,7 +9,11 @@ using System.Threading.Tasks;
 
 namespace CMP1903M_A01_2223
 {
-     class operation
+    interface Ioperands
+    {
+        double performance();
+    }
+     class operation : Ioperands
     {
           public double _num1;
           public double _num2;
@@ -30,7 +34,7 @@ namespace CMP1903M_A01_2223
             _operand2 = operand2;
         }
 
-        public double performance()
+        public double performance() 
         {
           if (_operand == 1)
             {

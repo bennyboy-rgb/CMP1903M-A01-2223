@@ -40,7 +40,9 @@ namespace CMP1903M_A01_2223
             Console.WriteLine($"Unlike the easy level\n here, 5 cards are drawn, the first card drawn here is ({cards[0]}), the value which is ({cards[0].Value}] is taken as the first number and the suit is ignored");
             Console.WriteLine($"To get the first operatorwe pick the suit number which is ({cards[1].Suit}) which can be seen at the top of the page");
             Console.WriteLine($" The next number which is ({cards[2].Value}) and so on" );
-           
+            Console.WriteLine($" If you get the answer wrong twice, the application returns your answer as well...");
+            Console.WriteLine($"Enjoy the Game !!");
+
         }
         public static void operators()
         {
@@ -72,7 +74,8 @@ namespace CMP1903M_A01_2223
                     else if ( userInput == 2)
                     {
                         valid = true;
-                        Messages.goodByeMessage();
+                        Messages message = new Messages();
+                        Console.WriteLine(message.goodByeMessage()); 
                     }
                 }
                 else 

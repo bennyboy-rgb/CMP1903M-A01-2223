@@ -11,37 +11,15 @@ namespace CMP1903M_A01_2223
     class fivelevels : threeCardslevel
     {
         List<Card> cards = Pack.dealCard(5);
-
-        public override void OutputEquation()
+        public override void Equation()
         {
             foreach (Card card in cards)
             {
                 Console.WriteLine(card);
             }
         }
-/*        public void OutputEquation()
-        {
-            foreach (Card card in cards)
-            {
-                Console.WriteLine(card);
-            }
-        }*/
         public override double evaluate()
         {
-            //double x = 0;
-            //if (cards[1].Suit >= cards[3].Suit) {
-            //    operation operatr1 = new operation(cards[0].Value, cards[2].Value, cards[1].Suit);
-            //    Console.WriteLine(operatr1.ToString());
-            //    x = operatr1.performance();
-            //}
-            //else if (cards[1].Suit < cards[3].Suit) 
-            //{
-            //    operation operatr1 = new operation(cards[2].Value, cards[4].Value, cards[3].Suit);
-            //    Console.WriteLine(operatr1.ToString());
-            //    x = operatr1.performance();
-            //}
-            //return x;
-
             dynamic operate = new operation(cards[0].Value, cards[2].Value, cards[4].Value, cards[1].Suit, cards[3].Suit);
             Console.WriteLine(operate.ToString());
             double x = operate.performance();
@@ -50,7 +28,45 @@ namespace CMP1903M_A01_2223
         }
         public override void userInput()
         {
-            
+            bool valid = false;
+            int counter = 0;
+            float input = 0;
+            while (!valid)
+            {
+                double answer = evaluate();
+                if (float.TryParse(Console.ReadLine(), out input))
+                {
+
+                    if (input == answer)
+                    {
+                        valid = true;
+                        Console.WriteLine("Yayy, correct answer!!");
+                    }
+                    else
+                    {
+                        /*valid = true;*/
+                        Console.WriteLine("\nArghhh, wrong answer!!");
+
+                        counter++;
+                        if (counter < 2)
+                        {
+                            /*valid = true;*/
+                            Console.Write("Try again : ");
+                        }
+                        else if (counter == 2)
+                        {
+                            valid = true;
+                            Console.WriteLine($"The correct answer is {answer}\n");
+
+                        }
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Input an integer please!!");
+                }
+
+            }
         }
     }
 }

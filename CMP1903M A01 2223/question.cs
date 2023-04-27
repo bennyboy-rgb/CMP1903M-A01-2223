@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace CMP1903M_A01_2223
 {
+    
     public class Questions
     {
         public static void card_dealer()
@@ -121,7 +122,8 @@ namespace CMP1903M_A01_2223
                     else if(user_input == 2)
                     {
                         valid = true;
-                        Messages.goodByeMessage();
+                        Messages message = new Messages();
+                        Console.WriteLine(message.goodByeMessage()); 
                     }
                     else
                     {

@@ -12,8 +12,15 @@ namespace CMP1903M_A01_2223
     
         List<Card> cards = Pack.dealCard(3);
 
-        public virtual void OutputEquation()
+        public virtual void Equation()
         {
+/*            List<Card> list = cards;
+            foreach (Card card in cards)
+            {
+                list.Add(card);
+
+            }*/
+            /*return cards;*/
             foreach (Card card in cards)
             {
                 Console.WriteLine(card);

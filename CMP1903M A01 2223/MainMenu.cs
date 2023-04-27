@@ -12,6 +12,9 @@ namespace CMP1903M_A01_2223
 
         public void menu()
         {
+            
+            Messages messages = new Messages();
+            Console.WriteLine(messages.welcomemessage()); 
             bool valid = false;
             int user_input = 0;
             while (!valid)
@@ -30,7 +33,7 @@ namespace CMP1903M_A01_2223
                         valid = true;
                         Questions.shufflegameMethod();
                         dynamic threelevel= new threeCardslevel();
-                        threelevel.OutputEquation();
+                        threelevel.Equation();
                         threelevel.userInput();
                         dynamic playerchoice = new Questions();
 
@@ -40,15 +43,15 @@ namespace CMP1903M_A01_2223
                     else if (user_input == 2)
                     {
                         valid = true;
-                     /*   int answer = fiveCardsLevel.playgame2();
-                        if (answer == 1)
-                        {
-                            Console.WriteLine("Correct answer!!");
-                        }
-                        else
-                        { Console.WriteLine($"Wrong Answer, The correct answer is {answer}"); }*/
+                     
                      dynamic hard_level= new fivelevels();
-                        hard_level.evaluate();
+                        //hard_level.evaluate();
+                        Questions.shufflegameMethod();
+
+                        hard_level.userInput();
+                        dynamic playerchoice = new Questions();
+
+                        playerchoice.playAgain();
                     }
                     else if (user_input == 3)
                     {
@@ -62,7 +65,7 @@ namespace CMP1903M_A01_2223
                     else if (user_input == 4)
                     {
                         valid = true;
-                        Messages.goodByeMessage();
+                        Console.WriteLine(messages.goodByeMessage()); 
                     }
                 }
                 else
