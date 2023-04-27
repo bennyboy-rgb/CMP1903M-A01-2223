@@ -15,6 +15,8 @@ namespace CMP1903M_A01_2223
             
             Messages messages = new Messages();
             Console.WriteLine(messages.welcomemessage()); 
+
+
             bool valid = false;
             int user_input = 0;
             while (!valid)
@@ -32,9 +34,7 @@ namespace CMP1903M_A01_2223
                     {
                         valid = true;
                         Questions.shufflegameMethod();
-                        /*dynamic threelevel= new threeCardslevel();
-                        threelevel.Equation();
-                        threelevel.userInput();*/
+                        
                         threeCardslevel level = new threeCardslevel();
                         level.userInput(level.evaluate());
                         dynamic playerchoice = new Questions();
@@ -47,7 +47,6 @@ namespace CMP1903M_A01_2223
                         valid = true;
                         Questions.shufflegameMethod();
                         dynamic hard_level= new fivelevels();
-                        //hard_level.evaluate();
                         hard_level.userInput(hard_level.evaluate());
                         dynamic playerchoice = new Questions();
 

@@ -27,13 +27,11 @@ namespace CMP1903M_A01_2223
                     }
                     else
                     {
-                        /*valid = true;*/
                         Console.WriteLine("\nArghhh, wrong answer!!");
 
                         counter++;
                         if (counter < 2)
                         {
-                            /*valid = true;*/
                             Console.Write("Try again : ");
                         }
                         else if (counter == 2)

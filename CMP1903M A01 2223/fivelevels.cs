@@ -26,48 +26,7 @@ namespace CMP1903M_A01_2223
             return x;
 
         }
-        /*public override void userInput()
-        {
-            bool valid = false;
-            int counter = 0;
-            float input = 0;
-            while (!valid)
-            {
-                double answer = evaluate();
-                if (float.TryParse(Console.ReadLine(), out input))
-                {
-
-                    if (input == answer)
-                    {
-                        valid = true;
-                        Console.WriteLine("Yayy, correct answer!!");
-                    }
-                    else
-                    {
-                        *//*valid = true;*//*
-                        Console.WriteLine("\nArghhh, wrong answer!!");
-
-                        counter++;
-                        if (counter < 2)
-                        {
-                            *//*valid = true;*//*
-                            Console.Write("Try again : ");
-                        }
-                        else if (counter == 2)
-                        {
-                            valid = true;
-                            Console.WriteLine($"The correct answer is {answer}\n");
-
-                        }
-                    }
-                }
-                else
-                {
-                    Console.WriteLine("Input an integer please!!");
-                }
-
-            }
-        }*/
+          
         public override void userInput(double question)
         {
             base.userInput(question);
