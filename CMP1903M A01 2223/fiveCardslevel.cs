@@ -26,34 +26,38 @@ namespace CMP1903M_A01_2223
            if (cards[1].Suit >= cards[3].Suit)
             {
                 operation operate = new operation(cards[0].Value, cards[2].Value, cards[1].Suit);
-                Console.Write($"{operate.ToString()}\t" );
+                Console.Write(operate.ToString());
 
                 double y = operate.performance();
-
-               if (y== answer)
+                double a;
+                double.TryParse(Console.ReadLine(), out a);
+                if (a== y)
                 {
                     operation operate2 = new operation(y, cards[4].Value, cards[3].Suit);
-                    Console.Write($"{operate2.ToString()} = ?");
+                    Console.Write(operate2.ToString());
 
                     answer = operate2.performance();
-                } 
+                }
+                else
+                {
+                    Console.WriteLine("wrong answer !!");
+                }
 
 
             }
            else if (cards[1].Suit < cards[3].Suit)
             {
                 operation operate2 = new operation(cards[0].Value, cards[2].Value, cards[1].Suit);
-                Console.Write($"{operate2.ToString()}");
+                Console.Write(operate2.ToString());
 
                 double z = operate2.performance();
 
-               if ( z!= answer)
-                {
+                
                     operation operate = new operation(z, cards[4].Value, cards[3].Suit);
-                    Console.Write($"{operate.ToString()} = ?");
+                    Console.Write(operate.ToString());
                     answer = operate.performance();
 
-                }
+                
 
             }
            

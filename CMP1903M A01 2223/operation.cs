@@ -18,9 +18,7 @@ namespace CMP1903M_A01_2223
     {
           public double _num1;
           public double _num2;
-          public double _num3;
           public int _operand;
-          public int _operand2;
         
         public operation(double num1, double num2, int operand)
         {
@@ -29,7 +27,7 @@ namespace CMP1903M_A01_2223
             _operand = operand;
 
         }
-        public double performance() 
+        public virtual double performance() 
         {
           if (_operand == 1)
             {

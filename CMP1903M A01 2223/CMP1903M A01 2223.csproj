@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Card.cs" />
+    <Compile Include="fiveCardoperation.cs" />
     <Compile Include="fiveCardslevel.cs" />
     <Compile Include="Help.cs" />
     <Compile Include="logfile.cs" />
