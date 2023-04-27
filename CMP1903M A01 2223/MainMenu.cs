@@ -32,9 +32,11 @@ namespace CMP1903M_A01_2223
                     {
                         valid = true;
                         Questions.shufflegameMethod();
-                        dynamic threelevel= new threeCardslevel();
+                        /*dynamic threelevel= new threeCardslevel();
                         threelevel.Equation();
-                        threelevel.userInput();
+                        threelevel.userInput();*/
+                        threeCardslevel level = new threeCardslevel();
+                        level.userInput(level.evaluate());
                         dynamic playerchoice = new Questions();
 
                         playerchoice.playAgain();
@@ -43,12 +45,10 @@ namespace CMP1903M_A01_2223
                     else if (user_input == 2)
                     {
                         valid = true;
-                     
-                     dynamic hard_level= new fivelevels();
-                        //hard_level.evaluate();
                         Questions.shufflegameMethod();
-
-                        hard_level.userInput();
+                        dynamic hard_level= new fivelevels();
+                        //hard_level.evaluate();
+                        hard_level.userInput(hard_level.evaluate());
                         dynamic playerchoice = new Questions();
 
                         playerchoice.playAgain();
