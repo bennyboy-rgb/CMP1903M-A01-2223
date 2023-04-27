@@ -29,12 +29,6 @@ namespace CMP1903M_A01_2223
             _operand = operand;
 
         }
-        public operation(double num1, double num2, double num3, int operand1, int operand2) : this(num1,num2,operand1)
-        {
-            _num3 = num3;
-            _operand2 = operand2;
-        }
-
         public double performance() 
         {
           if (_operand == 1)
@@ -68,10 +62,9 @@ namespace CMP1903M_A01_2223
                 return operatorCharacter;
             }
             char operator1Character = operatorTocharacter(_operand);
-            char operator2Character = operatorTocharacter(_operand2);
            
             
-            return $"{_num1} {operator1Character} {_num2} {operator2Character} {_num3} ";
+            return $"{_num1} {operator1Character} {_num2}  ";
 
         }
     }
