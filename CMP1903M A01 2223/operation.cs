@@ -14,34 +14,34 @@ namespace CMP1903M_A01_2223
         double performance();
         string ToString();
     }
-     class operation : Ioperands
+    class operation : Ioperands
     {
-          public double _num1;
-          public double _num2;
-          public int _operand;
-        
+        public double _num1;
+        public double _num2;
+        public int _operand;
+
         public operation(double num1, double num2, int operand)
         {
-           _num1 = num1;
+            _num1 = num1;
             _num2 = num2;
             _operand = operand;
 
         }
-        public virtual double performance() 
+        public virtual double performance()
         {
-          if (_operand == 1)
+            if (_operand == 1)
             {
                 return _num1 + _num2;
             }
-          else if (_operand == 2)
+            else if (_operand == 2)
             {
                 return _num1 - _num2;
             }
-          else if (_operand == 3)
+            else if (_operand == 3)
             {
                 return _num1 / _num2;
             }
-          else if(_operand == 4)
+            else if (_operand == 4)
             {
                 return _num1 * _num2;
             }
@@ -53,15 +53,15 @@ namespace CMP1903M_A01_2223
             char operatorTocharacter(int op)
             {
                 char operatorCharacter = '0';
-                if (op== 1) operatorCharacter = '+';
+                if (op == 1) operatorCharacter = '+';
                 else if (op == 2) { operatorCharacter = '-'; }
                 else if (op == 3) { operatorCharacter = '/'; }
                 else if (op == 4) { operatorCharacter = 'X'; }
                 return operatorCharacter;
             }
             char operator1Character = operatorTocharacter(_operand);
-           
-            
+
+
             return $"{_num1} {operator1Character} {_num2}  ";
 
         }

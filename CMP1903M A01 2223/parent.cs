@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CMP1903M_A01_2223
 {
-     class parent
+    class parent
     {
         public virtual void userInput(double question)
         {
@@ -37,7 +37,7 @@ namespace CMP1903M_A01_2223
                         else if (counter == 2)
                         {
                             valid = true;
-                            Console.WriteLine($"The correct answer is {answer}\n");
+                            Console.WriteLine($"The correct answer is {decimalPlaces(answer)}\n");
 
                         }
                     }
@@ -49,6 +49,11 @@ namespace CMP1903M_A01_2223
             }
 
 
+        }
+
+        private double decimalPlaces(double num)
+        {
+            return Math.Truncate(num * 100) / 100;
         }
 
     }
