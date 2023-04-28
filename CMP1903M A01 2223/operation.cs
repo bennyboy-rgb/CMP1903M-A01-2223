@@ -22,7 +22,7 @@ namespace CMP1903M_A01_2223
         public int _operand2;
         public int _operand;
 
-        public operation(double num1, double num2, int operand)
+        public  operation(double num1, double num2, int operand)
         {
             _num1 = num1;
             _num2 = num2;
