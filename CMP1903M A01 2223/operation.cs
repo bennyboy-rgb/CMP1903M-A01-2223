@@ -9,20 +9,14 @@ using System.Threading.Tasks;
 
 namespace CMP1903M_A01_2223
 {
-    interface Ioperands
-    {
-        double performance();
-        string ToString();
-    }
+   
     class operation : Ioperands
     {
-        public double _num1;
-        public double _num2;
-        public double _num3;
-        public int _operand2;
-        public int _operand;
+        public float _num1;
+        public float _num2;
+        public float _operand;
 
-        public  operation(double num1, double num2, int operand)
+        public  operation(float num1, float num2, float operand)
         {
             _num1 = num1;
             _num2 = num2;
@@ -30,7 +24,7 @@ namespace CMP1903M_A01_2223
 
         }
 
-        public virtual double performance()
+        public virtual float performance()
         {
             if (_operand == 1)
             {
@@ -53,7 +47,7 @@ namespace CMP1903M_A01_2223
 
         public override string ToString()
         {
-            char operatorTocharacter(int op)
+            char operatorTocharacter(float op)
             {
                 char operatorCharacter = '0';
                 if (op == 1) operatorCharacter = '+';
@@ -65,7 +59,7 @@ namespace CMP1903M_A01_2223
             char operator1Character = operatorTocharacter(_operand);
 
 
-            return $"{_num1} {operator1Character} {_num2}  ";
+            return $"{_num1} {operator1Character} {_num2} = ? ";
 
         }
     }

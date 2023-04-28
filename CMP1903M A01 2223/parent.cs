@@ -8,7 +8,7 @@ namespace CMP1903M_A01_2223
 {
     class parent
     {
-        public virtual void userInput(double question)
+        public virtual void userInput(float question)
         {
 
             bool valid = false;
@@ -16,7 +16,7 @@ namespace CMP1903M_A01_2223
             float input = 0;
             while (!valid)
             {
-                double answer = question;
+                float answer = question;
                 if (float.TryParse(Console.ReadLine(), out input))
                 {
 
@@ -51,6 +51,8 @@ namespace CMP1903M_A01_2223
 
         }
 
+
+        // returns answer to 2 decimal places
         private double decimalPlaces(double num)
         {
             return Math.Truncate(num * 100) / 100;

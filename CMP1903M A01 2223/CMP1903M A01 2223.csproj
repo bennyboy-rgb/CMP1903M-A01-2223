@@ -47,6 +47,7 @@
     <Compile Include="fiveCardoperation.cs" />
     <Compile Include="fiveCardslevel.cs" />
     <Compile Include="Help.cs" />
+    <Compile Include="Interface1.cs" />
     <Compile Include="logfile.cs" />
     <Compile Include="MainMenu.cs" />
     <Compile Include="operation.cs" />
