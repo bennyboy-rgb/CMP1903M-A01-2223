@@ -12,11 +12,11 @@ namespace CMP1903M_A01_2223
    
     class operation : Ioperands
     {
-        public float _num1;
-        public float _num2;
-        public float _operand;
+        public double _num1;
+        public double _num2;
+        public int _operand;
 
-        public  operation(float num1, float num2, float operand)
+        public  operation(double num1, double num2, int operand)
         {
             _num1 = num1;
             _num2 = num2;
@@ -24,7 +24,7 @@ namespace CMP1903M_A01_2223
 
         }
 
-        public virtual float performance()
+        public virtual double performance()
         {
             if (_operand == 1)
             {

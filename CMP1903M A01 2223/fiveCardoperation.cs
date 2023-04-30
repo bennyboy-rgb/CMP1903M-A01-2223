@@ -8,9 +8,9 @@ namespace CMP1903M_A01_2223
 {
     internal class fiveCardoperation : operation
     {
-        public float _num3;
-        public float _operand2;
-        public fiveCardoperation(float num1, float num2, float num3, float operand, float operand2) : base(num1, num2, operand)
+        public double _num3;
+        public int _operand2;
+        public fiveCardoperation(double num1, double num2, double num3, int operand, int operand2) : base(num1, num2, operand)
         {
             _num3 = num3;
             _operand2 = operand2;
@@ -20,7 +20,7 @@ namespace CMP1903M_A01_2223
         public override string ToString()
         {
 
-            char operatorTocharacter(float op)
+            char operatorTocharacter(int op)
             {
                 char operatorCharacter = '0';
                 if (op == 1) operatorCharacter = '+';

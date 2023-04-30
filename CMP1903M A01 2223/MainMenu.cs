@@ -48,6 +48,7 @@ namespace CMP1903M_A01_2223
 
                         dynamic hard_level= new fiveCardslevel();
                         hard_level.Equation();
+                       // hard_level.evaluate();
                         hard_level.userInput(hard_level.evaluate());
 
                         dynamic playerchoice = new Questions();

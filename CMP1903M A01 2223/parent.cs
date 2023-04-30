@@ -8,16 +8,17 @@ namespace CMP1903M_A01_2223
 {
     class parent
     {
-        public virtual void userInput(float question)
+        public virtual void userInput(double question)
         {
 
             bool valid = false;
             int counter = 0;
-            float input = 0;
+            double input = 0;
             while (!valid)
             {
-                float answer = question;
-                if (float.TryParse(Console.ReadLine(), out input))
+                double answer = question;
+                decimalPlaces(answer);
+                if (double.TryParse(Console.ReadLine(), out input))
                 {
 
                     if (input == answer)
@@ -39,6 +40,7 @@ namespace CMP1903M_A01_2223
                             valid = true;
                             Console.WriteLine($"The correct answer is {decimalPlaces(answer)}\n");
 
+
                         }
                     }
                 }
@@ -47,6 +49,8 @@ namespace CMP1903M_A01_2223
                     Console.WriteLine("Input an integer please!!");
                 }
             }
+           /* Console.WriteLine($"You got {correct} right!");
+            Console.WriteLine($"You got {incorrect} wrong!");*/
 
 
         }

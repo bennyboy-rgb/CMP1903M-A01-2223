@@ -19,16 +19,16 @@ namespace CMP1903M_A01_2223
                 Console.WriteLine(card);
             }
         }
-        public float evaluate()
+        public double evaluate()
         {
             dynamic operate = new operation(cards[0].Value, cards[2].Value, cards[1].Suit);
             Console.WriteLine(operate.ToString());
-            float x = operate.performance();
+            double x = operate.performance();
 
             return x;
             
         }
-        public override void userInput(float question)
+        public override void userInput(double question)
         {
             base.userInput(question);
         }

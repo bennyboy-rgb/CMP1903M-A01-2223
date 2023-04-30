@@ -8,7 +8,7 @@ namespace CMP1903M_A01_2223
 {
     interface Ioperands
     {
-        float performance();
+        double performance();
         string ToString();
     }
 }
