@@ -17,7 +17,7 @@ namespace CMP1903M_A01_2223
             while (!valid)
             {
                 double answer = question;
-                decimalPlaces(answer);
+                decimalPlaces(input);
                 if (double.TryParse(Console.ReadLine(), out input))
                 {
 
