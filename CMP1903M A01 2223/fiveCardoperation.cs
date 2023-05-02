@@ -17,6 +17,7 @@ namespace CMP1903M_A01_2223
 
         }
         
+        // displays the equation for the question of 5 cards!!
         public override string ToString()
         {
 
@@ -33,7 +34,7 @@ namespace CMP1903M_A01_2223
             char operator2Character = operatorTocharacter(_operand2);
 
 
-            return $"{_num1} {operator1Character} {_num2} {operator2Character} {_num3} =? ";
+            return $"{_num1} {operator1Character} {_num2} {operator2Character} {_num3} = ? ";
 
         }
     }

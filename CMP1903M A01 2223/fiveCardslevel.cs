@@ -20,11 +20,10 @@ namespace CMP1903M_A01_2223
         }
         public double evaluate()
         {
-            
+
             fiveCardoperation newoperator = new fiveCardoperation(cards[0].Value, cards[2].Value, cards[4].Value, cards[1].Suit, cards[3].Suit);
             Console.WriteLine(newoperator.ToString());
-
-            int counter = 0;
+            bool valid = false;
             double answer = 0;
             if (cards[1].Suit >= cards[3].Suit)
             {
@@ -33,18 +32,25 @@ namespace CMP1903M_A01_2223
                 Console.Write(operate.ToString());
 
                 double y = operate.performance();
-/*                userInput(y);
-*/                double a;
-                double.TryParse(Console.ReadLine(), out a);
-                if (a == y)
+                userInput(y);
+                while (!valid)
                 {
-                    operation operate2 = new operation(y, cards[4].Value, cards[3].Suit);
-                    Console.Write(operate2.ToString());
+                    double reply = 0;
+                    Console.Write("Would you love to enter the answer again so you can move to the next question :");
 
-                    answer = operate2.performance();
-/*                    userInput(answer);
-*/
+                    if (double.TryParse(Console.ReadLine(), out reply))
+                    {
+                        valid = true;
+                            operation operate2 = new operation(y, cards[4].Value, cards[3].Suit);
+                            Console.Write(operate2.ToString());
+                            answer = operate2.performance();
+                    }
+                    else
+                    {
+                        Console.WriteLine("input an integer please!!");
+                    }
                 }
+
 
 
 
@@ -55,19 +61,38 @@ namespace CMP1903M_A01_2223
                 Console.Write(operate2.ToString());
 
                 double z = operate2.performance();
-/*                userInput(z);
-*/
+                userInput(z);/*
+                Console.WriteLine("Would you love to enter the answer again so you can move to the next question :");
+
                 double answer2;
-                double.TryParse(Console.ReadLine(), out  answer2);
-                if (answer2 == z)
+                double.TryParse(Console.ReadLine(), out answer2);
+                if (valid)
                 {
                     operation operate = new operation(z, cards[0].Value, cards[1].Suit);
                     Console.Write(operate.ToString());
-                    answer2 = operate.performance();
+                    answer = operate.performance();
+                }
+                userInput(y);*/
+                while (!valid)
+                {
+                    double reply = 0;
+                    Console.Write("Would you love to enter the answer again so you can move to the next question :");
+
+                    if (double.TryParse(Console.ReadLine(), out reply))
+                    {
+
+                        valid = true;
+                        operation operate = new operation(z, cards[0].Value, cards[1].Suit);
+                        Console.Write(operate.ToString());
+                        answer = operate.performance();
+                    }
+                    else
+                    {
+                        Console.WriteLine("input an integer please!!");
+                    }
                 }
 
-/*                userInput(answer2);
-*/
+
 
 
             }

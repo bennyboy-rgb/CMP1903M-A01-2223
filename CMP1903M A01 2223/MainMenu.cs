@@ -45,14 +45,13 @@ namespace CMP1903M_A01_2223
                         valid = true;
                         Questions.shufflegameMethod();
                         Console.WriteLine(messages.CardDrawnMessages());
-
-                        dynamic hard_level= new fiveCardslevel();
-                        hard_level.Equation();
-                       //0.87 hard_level.evaluate();
-                        hard_level.userInput(hard_level.evaluate());
-
+                       fiveCardslevel hardLevel = new fiveCardslevel();
+                        hardLevel.Equation();
+                        hardLevel.userInput(hardLevel.evaluate());
                         dynamic playerchoice = new Questions();
+
                         playerchoice.playAgain();
+
                     }
                     else if (user_input == 3)
                     {

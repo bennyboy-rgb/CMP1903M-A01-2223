@@ -37,11 +37,13 @@ namespace CMP1903M_A01_2223
             {
                 Console.WriteLine(cards[i]);
             }
-            Console.WriteLine($"Unlike the easy level\n here, 5 cards are drawn, the first card drawn here is ({cards[0]}), the value which is ({cards[0].Value}] is taken as the first number and the suit is ignored");
+            Console.WriteLine($"Unlike the easy level, this level is divided into two parts based on the bodmas rules!!");
+            Console.WriteLine($"Here, 5 cards are drawn, the first card drawn here is ({cards[0]}), the value which is ({cards[0].Value}] is taken as the first number and the suit is ignored");
             Console.WriteLine($"To get the first operator we pick the suit number which is ({cards[1].Suit}) which can be seen at the top of the page");
-            Console.WriteLine($" The next number which is ({cards[2].Value}) and so on" );
-            Console.WriteLine($"this level is broken into two stages, you have to get the first part so you can get the other part");
-            Console.WriteLine($" If you get the answer wrong twice, the application returns your answer as well...");
+            Console.WriteLine($"The next number which is ({cards[2].Value}) and so on" );
+            Console.WriteLine($"You have to get the first part so you can get the other part");
+            Console.WriteLine($"If you get the answer wrong twice, the application returns your answer as well...");
+            Console.WriteLine($"Either you get the answer right or wrong, to move to the other part of the question, you have to provide the previous answer!!");
             Console.WriteLine($"Enjoy the application !!");
 
         }
