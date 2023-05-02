@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CMP1903M_A01_2223
 {
-    class parent
+    class LevelParents
     {
         public virtual void userInput(double question)
         {

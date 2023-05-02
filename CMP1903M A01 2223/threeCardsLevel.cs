@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CMP1903M_A01_2223
 {
-    internal class threeCardslevel :parent
+    internal class threeCardslevel :LevelParents
     {
     
         List<Card> cards = Pack.dealCard(3);

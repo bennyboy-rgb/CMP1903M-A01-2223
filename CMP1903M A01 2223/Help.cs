@@ -43,7 +43,7 @@ namespace CMP1903M_A01_2223
             Console.WriteLine($"The next number which is ({cards[2].Value}) and so on" );
             Console.WriteLine($"You have to get the first part so you can get the other part");
             Console.WriteLine($"If you get the answer wrong twice, the application returns your answer as well...");
-            Console.WriteLine($"Either you get the answer right or wrong, to move to the other part of the question, you have to provide the previous answer!!");
+            Console.WriteLine($"Either you get the first question right or wrong, to move to the other part of the question, you have to provide the an integer, the previous answer preferably!!");
             Console.WriteLine($"Enjoy the application !!");
 
         }

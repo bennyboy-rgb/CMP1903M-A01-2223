@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace CMP1903M_A01_2223
 {
 
-    class fiveCardslevel : parent
+    class fiveCardslevel : LevelParents
     {
         List<Card> cards = Pack.dealCard(5);
         public void Equation()
@@ -61,18 +61,7 @@ namespace CMP1903M_A01_2223
                 Console.Write(operate2.ToString());
 
                 double z = operate2.performance();
-                userInput(z);/*
-                Console.WriteLine("Would you love to enter the answer again so you can move to the next question :");
-
-                double answer2;
-                double.TryParse(Console.ReadLine(), out answer2);
-                if (valid)
-                {
-                    operation operate = new operation(z, cards[0].Value, cards[1].Suit);
-                    Console.Write(operate.ToString());
-                    answer = operate.performance();
-                }
-                userInput(y);*/
+                userInput(z);
                 while (!valid)
                 {
                     double reply = 0;
