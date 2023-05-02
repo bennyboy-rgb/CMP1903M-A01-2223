@@ -13,16 +13,21 @@ namespace CMP1903M_A01_2223
         public Pack()
         {
             //Initialise the card pack here
-            for ( int i = 1; i<14; i ++)// 13 values 
+          InitializePack();
+        }
+
+        public static void InitializePack()
+        {
+            pack.Clear();
+            for (int i = 1; i < 14; i++)// 13 values 
             {
-                for ( int j = 1 ; j < 5 ; j++)// 4 suits
+                for (int j = 1; j < 5; j++)// 4 suits
                 {
-                    Card card = new Card(i,j); //ceates the cards in that sequence
+                    Card card = new Card(i, j); //ceates the cards in that sequence
                     pack.Add(card);
                 }
             }
         }
-
         public static bool shuffleCardPack(int typeOfShuffle)
         {
             //Shuffles the pack based on the type of shuffle
@@ -49,12 +54,18 @@ namespace CMP1903M_A01_2223
         }
         public static List<Card> dealCard(int amount)
         {
+            if (pack.Count < amount)
+            {
+                InitializePack();
+            }
             //Deals the number of cards specified by 'amount'
             List<Card> cardsToReturn = pack.Take(amount).ToList();
+
             foreach (Card card in cardsToReturn)
             {
                     pack.Remove(card);
             }
+
             return cardsToReturn;
         }
         public static bool fisher_yates_method() 

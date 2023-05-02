@@ -35,6 +35,10 @@ namespace CMP1903M_A01_2223
                 userInput(y);
                 while (!valid)
                 {
+                    valid = true;
+                    operation operate2 = new operation(y, cards[4].Value, cards[3].Suit);
+                    Console.Write(operate2.ToString());
+                    answer = operate2.performance();/*
                     double reply = 0;
                     Console.Write("Would you love to enter the answer again so you can move to the next question :");
 
@@ -48,7 +52,7 @@ namespace CMP1903M_A01_2223
                     else
                     {
                         Console.WriteLine("input an integer please!!");
-                    }
+                    }*/
                 }
 
 
@@ -64,9 +68,13 @@ namespace CMP1903M_A01_2223
                 userInput(z);
                 while (!valid)
                 {
-                    double reply = 0;
-                    Console.Write("Would you love to enter the answer again so you can move to the next question :");
-
+                    valid = true;
+                    operation operate = new operation( cards[0].Value,z, cards[1].Suit);
+                    Console.Write(operate.ToString());
+                    answer = operate.performance();
+/*                    double reply = 0;
+*//*                    Console.Write("Would you love to enter the answer again so you can move to the next question :");
+*//*
                     if (double.TryParse(Console.ReadLine(), out reply))
                     {
 
@@ -78,7 +86,7 @@ namespace CMP1903M_A01_2223
                     else
                     {
                         Console.WriteLine("input an integer please!!");
-                    }
+                    }*/
                 }
 
 
