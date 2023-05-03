@@ -24,7 +24,7 @@ namespace CMP1903M_A01_2223
                     if (input == answer)
                     {
                         valid = true;
-                        Console.WriteLine("Yayy, correct answer!!");
+                        Console.WriteLine("\nYayy, correct answer!!");
                     }
                     else
                     {
@@ -49,10 +49,6 @@ namespace CMP1903M_A01_2223
                     Console.WriteLine("Input an integer please!!");
                 }
             }
-           /* Console.WriteLine($"You got {correct} right!");
-            Console.WriteLine($"You got {incorrect} wrong!");*/
-
-
         }
 
 

@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace CMP1903M_A01_2223
 {
+    // inherit's from the three-card-class and displays 5 cards
     internal class fiveCardoperation : operation
     {
+        
         public double _num3;
         public int _operand2;
         public fiveCardoperation(double num1, double num2, double num3, int operand, int operand2) : base(num1, num2, operand)
@@ -20,7 +22,7 @@ namespace CMP1903M_A01_2223
         // displays the equation for the question of 5 cards!!
         public override string ToString()
         {
-
+            // returns the operator
             char operatorTocharacter(int op)
             {
                 char operatorCharacter = '0';

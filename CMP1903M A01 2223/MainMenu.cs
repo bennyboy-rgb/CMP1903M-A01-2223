@@ -23,10 +23,10 @@ namespace CMP1903M_A01_2223
             {
                 Console.WriteLine("\n\nINSTRUCTION!!!");
                 Console.WriteLine("\tEnter :");
-                Console.WriteLine("\t\t(1) To Deal 3 Cards");
-                Console.WriteLine("\t\t(2) To Deal 5 Cards");
-                Console.WriteLine("\t\t(3) For Help");
-                Console.WriteLine("\t\t(4) To quit");
+                Console.WriteLine("\t(1) To Deal 3 Cards");
+                Console.WriteLine("\t(2) To Deal 5 Cards");
+                Console.WriteLine("\t(3) For Help");
+                Console.WriteLine("\t(4) To quit");
 
                 if (int.TryParse(Console.ReadLine(), out user_input))
                 {

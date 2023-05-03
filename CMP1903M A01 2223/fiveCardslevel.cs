@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CMP1903M_A01_2223
 {
-
+    // inherits's from the parent class 
     class fiveCardslevel : LevelParents
     {
         List<Card> cards = Pack.dealCard(5);
@@ -18,9 +18,12 @@ namespace CMP1903M_A01_2223
                 Console.WriteLine(card);
             }
         }
+
+        // evaluate's with respect to Bodmas by checking the suit numbers of the second and fourth cards
+        // and evaluates it!!
         public double evaluate()
         {
-
+            
             fiveCardoperation newoperator = new fiveCardoperation(cards[0].Value, cards[2].Value, cards[4].Value, cards[1].Suit, cards[3].Suit);
             Console.WriteLine(newoperator.ToString());
             bool valid = false;

@@ -46,7 +46,7 @@ namespace CMP1903M_A01_2223
 
             while (!valid)
             {
-                Console.WriteLine(" what shuffle method do you want do you want :\n ENTER \n (1) for fisheryate shuffling \n (2) for riffle shuffle \n (3) for no shuffle  ");
+                Console.WriteLine("what shuffle method do you want do you want :\n ENTER \n(1) for fisheryate shuffling \n(2) for riffle shuffle \n(3) for no shuffle  ");
                 if (int.TryParse(Console.ReadLine(), out user_input))
                 {
                     if (user_input == 1 || user_input == 2 || user_input == 3)
@@ -75,7 +75,7 @@ namespace CMP1903M_A01_2223
             bool valid = false;
             while (!valid)
             {
-                Console.WriteLine("Would you love to shuffle the cards before you begin?? \n Enter\n (1) for Yes \n (2) For NO");
+                Console.WriteLine("Would you love to shuffle the cards before you begin?? \n Enter\n(1) for Yes \n(2) For NO");
                 if (int.TryParse(Console.ReadLine(),out user_input))
                 {
                     if ( user_input == 1)
