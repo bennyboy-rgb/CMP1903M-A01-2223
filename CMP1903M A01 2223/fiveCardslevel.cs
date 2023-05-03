@@ -36,11 +36,10 @@ namespace CMP1903M_A01_2223
 
                 double FirstAnswer = operate.performance();
                 userInput(FirstAnswer);
-                decimalPlaces(FirstAnswer);
                 while (!valid)
                 {
                     valid = true;
-                    operation operate2 = new operation(FirstAnswer, cards[4].Value, cards[3].Suit);
+                    operation operate2 = new operation(decimalPlaces(FirstAnswer), cards[4].Value, cards[3].Suit);
                     Console.Write(operate2.ToString());
                     answer = operate2.performance();
                 }
@@ -53,11 +52,10 @@ namespace CMP1903M_A01_2223
 
                 double InitialAnswer = operate2.performance();
                 userInput(InitialAnswer);
-                decimalPlaces(InitialAnswer);
                 while (!valid)
                 {
                     valid = true;
-                    operation operate = new operation(cards[0].Value, InitialAnswer, cards[1].Suit);
+                    operation operate = new operation(cards[0].Value, decimalPlaces(InitialAnswer), cards[1].Suit);
                     Console.Write(operate.ToString());
                     answer = operate.performance();
 

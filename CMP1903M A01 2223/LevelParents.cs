@@ -8,6 +8,7 @@ namespace CMP1903M_A01_2223
 {
     class LevelParents
     {
+        // collects user's input 
         public virtual void userInput(double question)
         {
 
