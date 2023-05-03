@@ -8,6 +8,9 @@ namespace CMP1903M_A01_2223
 {
     internal class MainMenu
     {
+        /// <summary>
+        /// MAin menu, the control room of all operations
+        /// </summary>
         public void menu()
         {
             
@@ -18,12 +21,12 @@ namespace CMP1903M_A01_2223
             int user_input = 0;
             while (!valid)
             {
-
-                Console.WriteLine("Enter :");
-                Console.WriteLine("(1) For easy level");
-                Console.WriteLine("(2) For Hard level");
-                Console.WriteLine("(3) For Help");
-                Console.WriteLine("(4) To quit");
+                Console.WriteLine("\n\nINSTRUCTION!!!");
+                Console.WriteLine("\tEnter :");
+                Console.WriteLine("\t\t(1) To Deal 3 Cards");
+                Console.WriteLine("\t\t(2) To Deal 5 Cards");
+                Console.WriteLine("\t\t(3) For Help");
+                Console.WriteLine("\t\t(4) To quit");
 
                 if (int.TryParse(Console.ReadLine(), out user_input))
                 {

@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 
 namespace CMP1903M_A01_2223
 {
-   
-     class Messages : Imessages
+
+    class Messages : Imessages
     {
         public virtual string welcomemessage()
         {
@@ -17,8 +17,6 @@ namespace CMP1903M_A01_2223
         public virtual string goodByeMessage()
         {
             return "Thank you for your time !! \nPress enter key to exit ...";
-          /*  Console.WriteLine("Thank you for your time !!");
-            Console.WriteLine("Press enter key to exit ...");*/
         }
         public virtual string CardDrawnMessages()
         {
