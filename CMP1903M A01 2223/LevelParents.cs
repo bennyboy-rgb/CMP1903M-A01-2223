@@ -57,7 +57,7 @@ namespace CMP1903M_A01_2223
 
 
         // returns answer to 2 decimal places
-        private double decimalPlaces(double num)
+        public double decimalPlaces(double num)
         {
             return Math.Truncate(num * 100) / 100;
         }

@@ -31,12 +31,13 @@ namespace CMP1903M_A01_2223
                 operation operate = new operation(cards[0].Value, cards[2].Value, cards[1].Suit);
                 Console.Write(operate.ToString());
 
-                double y = operate.performance();
-                userInput(y);
+                double FirstAnswer = operate.performance();
+                userInput(FirstAnswer);
+                decimalPlaces(FirstAnswer);
                 while (!valid)
                 {
                     valid = true;
-                    operation operate2 = new operation(y, cards[4].Value, cards[3].Suit);
+                    operation operate2 = new operation(FirstAnswer, cards[4].Value, cards[3].Suit);
                     Console.Write(operate2.ToString());
                     answer = operate2.performance();
                 }
@@ -47,12 +48,13 @@ namespace CMP1903M_A01_2223
                 operation operate2 = new operation(cards[2].Value, cards[4].Value, cards[3].Suit);
                 Console.Write(operate2.ToString());
 
-                double z = operate2.performance();
-                userInput(z);
+                double InitialAnswer = operate2.performance();
+                userInput(InitialAnswer);
+                decimalPlaces(InitialAnswer);
                 while (!valid)
                 {
                     valid = true;
-                    operation operate = new operation(cards[0].Value, z, cards[1].Suit);
+                    operation operate = new operation(cards[0].Value, InitialAnswer, cards[1].Suit);
                     Console.Write(operate.ToString());
                     answer = operate.performance();
 
