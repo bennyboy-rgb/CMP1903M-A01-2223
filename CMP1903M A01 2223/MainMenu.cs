@@ -14,7 +14,9 @@ namespace CMP1903M_A01_2223
         public void menu()
         {
             
-            Messages messages = new Messages();
+            Messages messages = new Messages();// messages instantiated 
+            threeCardslevel easy_level = new threeCardslevel();//thirdcards instantiated..
+
 
 
             bool valid = false;
@@ -35,10 +37,10 @@ namespace CMP1903M_A01_2223
                         valid = true;
                         Questions.shufflegameMethod();
                         Console.WriteLine(messages.CardDrawnMessages());
-                        threeCardslevel easy_level = new threeCardslevel();
                         easy_level.Equation();
                         easy_level.userInput(easy_level.evaluate());
-                        dynamic playerchoice = new Questions();
+
+                        dynamic playerchoice = new Questions();// should the player want to play again
 
                         playerchoice.playAgain();
 
