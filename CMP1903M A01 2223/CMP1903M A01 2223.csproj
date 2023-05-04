@@ -55,6 +55,7 @@
     <Compile Include="operation.cs" />
     <Compile Include="Pack.cs" />
     <Compile Include="LevelParents.cs" />
+    <Compile Include="Redealcards.cs" />
     <Compile Include="testing.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="question.cs" />

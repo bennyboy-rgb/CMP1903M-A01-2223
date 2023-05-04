@@ -110,20 +110,19 @@ namespace CMP1903M_A01_2223
             int user_input = 0;
              while (!valid)
              {
-                Console.WriteLine("Would you love to try again : \n ENTER : \n (1) for Yes \n(2) to quit Application ");
+                Console.WriteLine("Would you love to return to main menu: \n ENTER : \n (1)For yes \n(2)To deal again");
                 if (int.TryParse(Console.ReadLine(), out user_input)) 
                 {
-                    if ( user_input == 1)
+                    if (user_input == 1)
                     {
                         valid = true;
                         dynamic tutorial = new MainMenu();
                         tutorial.menu();
                     }
-                    else if(user_input == 2)
+                    else if (user_input == 2)
                     {
                         valid = true;
-                        Messages message = new Messages();
-                        Console.WriteLine(message.goodByeMessage()); 
+                        Redealcards.otherSelector();
                     }
                     else
                     {
