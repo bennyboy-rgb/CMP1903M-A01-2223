@@ -64,7 +64,7 @@ namespace CMP1903M_A01_2223
                 Console.WriteLine("Main Menu or quit");
                 Console.WriteLine("Enter :");
                 Console.WriteLine("(1) To return to main menu");
-                Console.WriteLine("(2) To quit game");
+                Console.WriteLine("(2) To quit Application");
                 if(int.TryParse(Console.ReadLine(), out userInput))
                 {
                     if(userInput == 1)

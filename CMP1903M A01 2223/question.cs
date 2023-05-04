@@ -110,7 +110,7 @@ namespace CMP1903M_A01_2223
             int user_input = 0;
              while (!valid)
              {
-                Console.WriteLine("Would you love to try again : \n ENTER : \n (1) for Yes \n(2) to quit game ");
+                Console.WriteLine("Would you love to try again : \n ENTER : \n (1) for Yes \n(2) to quit Application ");
                 if (int.TryParse(Console.ReadLine(), out user_input)) 
                 {
                     if ( user_input == 1)

@@ -20,7 +20,8 @@ namespace CMP1903M_A01_2223
         }
 
         // evaluate's with respect to Bodmas by checking the suit numbers of the second and fourth cards
-        // and evaluates it!!
+        // and evaluates the  first part!!
+        // then evaluates the other part of the equation
         public double evaluate()
         {
             
@@ -28,7 +29,7 @@ namespace CMP1903M_A01_2223
             Console.WriteLine(newoperator.ToString());
             bool valid = false;
             double answer = 0;
-            if (cards[1].Suit >= cards[3].Suit)
+            if (cards[1].Suit >= cards[3].Suit)// checks for the order of precedence
             {
 
                 operation operate = new operation(cards[0].Value, cards[2].Value, cards[1].Suit);

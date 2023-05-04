@@ -25,7 +25,7 @@ namespace CMP1903M_A01_2223
                     if (input == answer)
                     {
                         valid = true;
-                        Console.WriteLine("\nYayy, correct answer!!");
+                        Console.WriteLine($"\nYayy, correct answer!!\n");
                     }
                     else
                     {
